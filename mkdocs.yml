@@ -1,0 +1,82 @@
+site_name: Unikys Kullanım Kılavuzu
+site_url: https://omu.github.io/unikys-docs/
+site_description: Unikys Kalite Yönetim Sistemi Kullanım Kılavuzu
+site_author: Ondokuz Mayıs Üniversitesi
+
+repo_name: omu/unikys-docs
+repo_url: https://github.com/omu/unikys-docs
+
+theme:
+  name: material
+  language: tr
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Karanlık moda geç
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Aydınlık moda geç
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Ana Sayfa: index.md
+  - Giriş:
+    - Unikys Hakkında: giris/hakkinda.md
+    - Sisteme Giriş: giris/sisteme-giris.md
+    - Arayüz Tanıtımı: giris/arayuz.md
+  - Modüller:
+    - Veri ve Göstergeler: moduller/veri-gostergeler.md
+    - Süreç Yönetimi: moduller/surec-yonetimi.md
+    - Risk Yönetimi: moduller/risk-yonetimi.md
+    - Geri Bildirimler: moduller/geri-bildirimler.md
+    - İç Değerlendirme: moduller/ic-degerlendirme.md
+    - İç Denetim: moduller/ic-denetim.md
+    - İyileştirme Yönetimi: moduller/iyilestirme.md
+    - Eylem Planı: moduller/eylem-plani.md
+    - İç Kontrol: moduller/ic-kontrol.md
+    - Belge Yönetimi: moduller/belge-yonetimi.md
+    - Duyurular: moduller/duyurular.md
+    - Raporlar: moduller/raporlar.md
+    - Ayarlar: moduller/ayarlar.md
+  - Roller ve Yetkiler: roller.md
+  - Sık Sorulan Sorular: sss.md
+
+plugins:
+  - search:
+      lang: tr
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/omu
+  generator: false
