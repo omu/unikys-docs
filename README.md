@@ -1,6 +1,6 @@
-# Unikys Kullanım Kılavuzu
+# Ünikys Kullanım Kılavuzu
 
-Bu repository, Unikys Kalite Yönetim Sistemi'nin kullanım kılavuzunu içermektedir.
+Bu repository, Ünikys Kalite Yönetim Sistemi'nin kullanım kılavuzunu içermektedir.
 
 ## Canlı Site
 

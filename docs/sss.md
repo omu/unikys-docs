@@ -1,18 +1,18 @@
 # Sık Sorulan Sorular
 
-Bu sayfada Unikys sisteminin kullanımıyla ilgili sık sorulan sorular ve cevapları yer almaktadır.
+Bu sayfada Ünikys sisteminin kullanımıyla ilgili sık sorulan sorular ve cevapları yer almaktadır.
 
 ---
 
 ## Genel Sorular
 
-### Unikys nedir?
+### Ünikys nedir?
 
-Unikys, üniversiteler için geliştirilmiş kapsamlı bir Kalite Yönetim Sistemidir. Süreç yönetimi, risk yönetimi, iç denetim, belge yönetimi ve performans takibi gibi kalite güvence süreçlerini dijital ortamda yönetmenizi sağlar.
+Ünikys, üniversiteler için geliştirilmiş kapsamlı bir Kalite Yönetim Sistemidir. Süreç yönetimi, risk yönetimi, iç denetim, belge yönetimi ve performans takibi gibi kalite güvence süreçlerini dijital ortamda yönetmenizi sağlar.
 
 ### Sisteme nasıl giriş yapabilirim?
 
-Kurumunuzun Unikys adresine giderek, size verilen kullanıcı adı (e-posta) ve şifre ile giriş yapabilirsiniz. Detaylı bilgi için [Sisteme Giriş](giris/sisteme-giris.md) sayfasına bakınız.
+Kurumunuzun Ünikys adresine giderek, size verilen kullanıcı adı (e-posta) ve şifre ile giriş yapabilirsiniz. Detaylı bilgi için [Sisteme Giriş](giris/sisteme-giris.md) sayfasına bakınız.
 
 ### Şifremi unuttum, ne yapmalıyım?
 

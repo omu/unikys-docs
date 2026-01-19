@@ -1,6 +1,6 @@
-# Unikys Kullanım Kılavuzu
+# Ünikys Kullanım Kılavuzu
 
-Unikys Kalite Yönetim Sistemi'ne hoş geldiniz. Bu kılavuz, sistemin tüm modüllerini ve özelliklerini detaylı olarak açıklamaktadır.
+Ünikys Kalite Yönetim Sistemi'ne hoş geldiniz. Bu kılavuz, sistemin tüm modüllerini ve özelliklerini detaylı olarak açıklamaktadır.
 
 ## Hızlı Başlangıç
 

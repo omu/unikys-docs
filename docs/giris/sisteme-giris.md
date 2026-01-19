@@ -1,10 +1,10 @@
 # Sisteme Giriş
 
-Bu sayfa, Unikys sistemine nasıl giriş yapılacağını açıklamaktadır.
+Bu sayfa, Ünikys sistemine nasıl giriş yapılacağını açıklamaktadır.
 
 ## Giriş Sayfası
 
-Sisteme erişmek için kurumunuzun Unikys adresine gidin. Giriş sayfasında aşağıdaki bilgileri girmeniz gerekmektedir:
+Sisteme erişmek için kurumunuzun Ünikys adresine gidin. Giriş sayfasında aşağıdaki bilgileri girmeniz gerekmektedir:
 
 - **E-posta**: Kurumsal e-posta adresiniz
 - **Şifre**: Sistem şifreniz

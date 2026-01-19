@@ -1,6 +1,6 @@
-site_name: Unikys Kullanım Kılavuzu
+site_name: Ünikys Kullanım Kılavuzu
 site_url: https://omu.github.io/unikys-docs/
-site_description: Unikys Kalite Yönetim Sistemi Kullanım Kılavuzu
+site_description: Ünikys Kalite Yönetim Sistemi Kullanım Kılavuzu
 site_author: Ondokuz Mayıs Üniversitesi
 
 repo_name: omu/unikys-docs
@@ -39,7 +39,7 @@ theme:
 nav:
   - Ana Sayfa: index.md
   - Giriş:
-    - Unikys Hakkında: giris/hakkinda.md
+    - Ünikys Hakkında: giris/hakkinda.md
     - Sisteme Giriş: giris/sisteme-giris.md
     - Arayüz Tanıtımı: giris/arayuz.md
   - Modüller:

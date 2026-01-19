@@ -1,6 +1,6 @@
 # Arayüz Tanıtımı
 
-Bu sayfa, Unikys sisteminin temel arayüz öğelerini tanıtmaktadır.
+Bu sayfa, Ünikys sisteminin temel arayüz öğelerini tanıtmaktadır.
 
 ## Ana Bileşenler
 

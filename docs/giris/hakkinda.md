@@ -1,6 +1,6 @@
-# Unikys Hakkında
+# Ünikys Hakkında
 
-Unikys, üniversiteler için geliştirilmiş kapsamlı bir **Kalite Yönetim Sistemi**dir. Yükseköğretim kurumlarının kalite güvence süreçlerini dijital ortamda yönetmelerini sağlar.
+Ünikys, üniversiteler için geliştirilmiş kapsamlı bir **Kalite Yönetim Sistemi**dir. Yükseköğretim kurumlarının kalite güvence süreçlerini dijital ortamda yönetmelerini sağlar.
 
 ## Temel Özellikler
 

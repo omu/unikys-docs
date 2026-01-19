@@ -1,6 +1,6 @@
 # Roller ve Yetkiler
 
-Unikys sisteminde farklı yetki seviyelerine sahip kullanıcı rolleri bulunmaktadır. Bu sayfa, tüm rolleri ve erişim haklarını açıklamaktadır.
+Ünikys sisteminde farklı yetki seviyelerine sahip kullanıcı rolleri bulunmaktadır. Bu sayfa, tüm rolleri ve erişim haklarını açıklamaktadır.
 
 ## Rol Kategorileri
 
