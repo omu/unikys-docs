@@ -51,14 +51,14 @@ Kalite Sorumlusu, Süreç Yöneticisi ve Süreç Koordinatörü, kendileriyle il
 !!! note "Rol"
     Admin
 
-**Husus:**
+#### Husus
 
 1. **Risk ve Fırsat Yönetimi** > **Hususlar** menüsüne girin.
 2. **Husus Oluştur** butonuna tıklayın.
 3. **Husus** alanını doldurun, **Husus Türü** alanından **İç Husus** veya **Dış Husus** seçin ve **Oluştur** butonuna
    tıklayın.
 
-**İlgili taraf:**
+#### İlgili taraf
 
 1. **Risk ve Fırsat Yönetimi** > **İlgili Taraflar** menüsüne girin.
 2. **İlgili Taraf Oluştur** butonuna tıklayın.

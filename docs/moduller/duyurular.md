@@ -38,7 +38,7 @@ Bir duyuruyu silmeden yayından kaldırmak için düzenleme ekranında **Yayınl
 ## Duyuruları görüntüleme {#duyurulari-goruntuleme}
 
 !!! note "Rol"
-    Tüm kullanıcılar
+    Tüm kullanıcılar (**Biriminize Özel Duyurular** bölümü: Süreç Yöneticisi, Kalite Sorumlusu, Veri Giriş Yetkilisi)
 
 Yayındaki duyurular **Anasayfa**da görünür:
 

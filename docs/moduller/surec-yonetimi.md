@@ -29,13 +29,13 @@ tanımlanır.
 !!! note "Rol"
     Admin
 
-**Alan:**
+#### Alan
 
 1. **Süreç Yönetimi** > **Süreç Kartları** menüsüne girin.
 2. **Yeni Alan Oluştur** butonuna tıklayın.
 3. **Kod** ve **Alan** alanlarını doldurun ve **Oluştur** butonuna tıklayın.
 
-**Süreç:**
+#### Süreç
 
 1. Alan satırında **Göster** butonuna tıklayın.
 2. **Yeni Süreç Oluştur** butonuna tıklayın.
@@ -47,7 +47,7 @@ tanımlanır.
 
 Süreç Koordinatörü rolü bu formdaki **Süreç Koordinatörü** alanıyla verilir.
 
-**Faaliyet:**
+#### Faaliyet
 
 1. Sürecin sayfasında (süreç kartı) **Yeni Faaliyet Oluştur** butonuna tıklayın.
 2. **Faaliyet**, **Kod**, **Faaliyetin Amacı**, **Faaliyet Adımları** ve **Faaliyetin Yürütüldüğü Birimler** alanlarını

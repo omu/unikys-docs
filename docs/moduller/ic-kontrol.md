@@ -63,7 +63,7 @@ Oluşturulan İKF'ler **İç Kontrol** > **İç Kontrol Faaliyetleri (İKF)** me
 ## Faaliyet adımlarını tamamlama {#faaliyet-adimlarini-tamamlama}
 
 !!! note "Rol"
-    İç Kontrol Sorumlusu
+    İç Kontrol Sorumlusu, Admin
 
 1. **İç Kontrol** > **İç Kontrol Faaliyetleri (İKF)** menüsünden onaylanmış İKF'nin sayfasını açın.
 2. İlgili adımın satırında **Tamamla** butonuna tıklayın.
