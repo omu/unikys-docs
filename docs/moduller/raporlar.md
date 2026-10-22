@@ -1,129 +1,74 @@
 # Raporlar
 
-Bu modül, sistemdeki çeşitli verilerin raporlanmasını sağlar.
+Bu sayfada sistemdeki raporlar ve raporların nasıl görüntülenip indirileceği anlatılır.
 
-!!! info "Erişim"
-    Bu modüle **Paydaş İletişim Sorumlusu** hariç tüm roller erişebilir.
+## Bu sayfayı kimler kullanır
 
-## Raporlama Özellikleri
+**Raporlar** listesinde yalnızca rolünüze açık raporlar görünür. Birim rolü olan kullanıcılar raporları kendi birimleri
+için görüntüler.
 
-### Genel Özellikler
+## Rapor Görüntüleme {#rapor-goruntuleme}
 
-- **Filtreleme**: Tarih, birim, durum vb. kriterlere göre
-- **Dışa Aktarma**: Excel ve PDF formatları
-- **Görselleştirme**: Grafikler ve tablolar
-- **Karşılaştırma**: Dönemsel karşılaştırma imkanı
+!!! note "Rol"
+    Raporlara erişimi olan tüm kullanıcılar
 
----
+1. **Raporlar** menüsüne girin.
+2. Listede raporun satırındaki **Göster** butonuna tıklayın. **İndir** butonu olan raporlar doğrudan dosya olarak da
+   indirilebilir.
+3. Rapor sayfasında gerekli seçimleri yapın (ör. birim) ve sayfadaki butonlarla raporu görüntüleyin ya da indirin.
+4. Listeye dönmek için rapor sayfasındaki **Geri** butonunu kullanın.
 
-## Mevcut Raporlar
+## Rapor Listesi {#rapor-listesi}
 
-### Süreç Raporları
+Raporlar, **Raporlar** sayfasındaki sırayla aşağıda listelenmiştir.
 
-- Ana süreç listesi
-- Alt süreç detayları
-- Süreç faaliyet raporu
-- Süreç performans analizi
+| # | Rapor | Rapor sayfasında yapılacaklar |
+|---|-------|-------------------------------|
+| 1 | Birim Raporu | Birim ya da grup seçilir. |
+| 2 | Kurumsal Veriler | Filtreler seçilir; **Excel Dosyası Olarak İndir** ile indirilir. |
+| 3 | Kurumsal Göstergeler - Birim Performansları | Filtreler seçilir; **Excel Dosyası Olarak İndir** ile indirilir. |
+| 4 | Kurumsal Göstergeler | Filtreler seçilir; satırdaki **Üst Hedefler** ve **Gösterge Detayları** butonlarıyla ayrıntı açılır; **Excel Dosyası Olarak İndir** ile indirilir. |
+| 5 | Nihai Kurumsal Gösterge Değerleri | Filtreler seçilir; **Excel Dosyası Olarak İndir** ile indirilir. |
+| 6 | Süreç Raporu | Süreç ve birim seçilir. |
+| 7 | Risk Raporu | Birim seçilir. |
+| 8 | Geri Bildirim Raporu | Birim seçilir; **PDF Oluştur** ile PDF alınır; **Yıllık Rapor Oluştur** butonundan **Excel** ya da **PDF** seçilir. |
+| 9 | Geri Bildirim Performans Raporu | **Filtrele** ile filtreler uygulanır; **Excel Dosyası Olarak İndir** ile indirilir. |
+| 10 | Birim İç Değerlendirme Raporu | Birim ve iç değerlendirme seçilir; **Rapor Oluştur** ile PDF alınır; Admin ve Üniversite Yöneticisi **Birim Kontrol Dosyasını İndir** ile kontrol dosyasını hazırlatır; dosya e-posta ile gönderilir. |
+| 11 | BİDR Kurumsal İzleme ve Değerlendirme Raporu (Birim) | Birim ve iç değerlendirme seçilir; **Rapor Oluştur** ile PDF alınır. |
+| 12 | BİDR Komisyon Değerlendirme Takip Dosyası | İç değerlendirme seçilir; **Takip Dosyasını Oluştur** ile dosya hazırlanır ve e-posta ile gönderilir. |
+| 13 | Kurum İç Değerlendirme Raporu | İç değerlendirme seçilir; **Rapor Oluştur** ile Word dosyası alınır. |
+| 14 | İç Tetkik İstatistikleri | İç tetkik seçilir. |
+| 15 | İç Tetkik Bulgu ve Takip Çizelgesi | İç tetkik seçilir; **Excel Dosyası Olarak İndir** ile indirilir. |
+| 16 | Birim İç Tetkik Raporu | İç tetkik ve birim seçilir. |
+| 17 | DİF Raporu | Birim seçilir; **PDF Oluştur** ile PDF alınır. |
+| 18 | Birim DİF Sorumlulukları Raporu | Birim seçilir; **Excel Dosyası Olarak İndir** ile indirilir. |
+| 19 | Düzeltme Raporu | Birim seçilir; **PDF Oluştur** ile PDF alınır. |
+| 20 | Yönetim Görevi Raporu | Filtreler seçilir; **Excel Dosyası Olarak İndir** ile indirilir. |
+| 21 | Eylem Planı Raporu | Eylem planı seçilir; **Excel Dosyası Olarak İndir** ya da **PDF Oluştur** ile indirilir. |
+| 22 | İç Kontrol Faaliyeti (İKF) Raporu | Birim seçilir. |
+| 23 | İç Kontrol İlerleme Raporu | İç kontrol seçilir; **Excel Dosyası Olarak İndir** ya da **PDF Oluştur** ile indirilir. |
+| 24 | Toplantı Karar İstatistikleri | **Birim seç** alanından birim seçilir, **Göster** butonuna tıklanır; **İndir** butonundan **PDF** ya da **Excel** seçilir. |
+| 25 | Doküman Talepleri Raporu | Birim seçilir; **PDF Oluştur** ile PDF alınır; **Yıllık Rapor Oluştur** butonundan **Excel** ya da **PDF** seçilir. |
+| 26 | Doküman Raporu | **PDF Oluştur** ya da **Excel Dosyası Olarak İndir** ile indirilir. |
 
-### Risk Raporları
+## Kurumsal Göstergeler Raporundan Yönetim Görevi Verme {#yonetim-gorevi-verme}
 
-- Risk envanteri
-- Risk seviye dağılımı
-- Risk aktivite takibi
-- Trend analizi
+!!! note "Rol"
+    Admin, Üniversite Yöneticisi, Etiket Sorumlusu
 
-### Gösterge Raporları
+1. **Raporlar** menüsüne girin.
+2. **Kurumsal Göstergeler** satırındaki **Göster** butonuna tıklayın.
+3. Göstergenin satırındaki **Yönetim Görevi Oluştur** butonuna tıklayın.
+4. Formu doldurup **Oluştur** butonuna tıklayın.
 
-- Kurumsal gösterge raporu
-- Birim bazlı veri raporu
-- Dönemsel karşılaştırma
-- Hedef gerçekleşme analizi
+Yönetim görevi formunun ayrıntıları için [İyileştirme Yönetimi](iyilestirme.md) sayfasına bakınız.
 
-### İç Denetim Raporları
+## Eski Raporlar {#eski-raporlar}
 
-- Denetim bulgu raporu
-- Birim bazlı denetim sonuçları
-- Eylem takip raporu
+!!! note "Rol"
+    Admin
 
-### İç Kontrol Raporları
-
-- İç kontrol genel durum
-- Bileşen bazlı ilerleme
-- Faaliyet tamamlanma raporu
-
-### DİF Raporları
-
-- DİF durum raporu
-- Birim bazlı DİF analizi
-- Trend raporu
-
-### Geri Bildirim Raporları
-
-- Geri bildirim analizi
-- Konu bazlı dağılım
-- Yanıt süresi analizi
-
----
-
-## Rapor Oluşturma
-
-1. **Raporlar** menüsüne gidin
-2. İstediğiniz rapor türünü seçin
-3. Filtreleme kriterlerini belirleyin
-4. **Rapor Oluştur** butonuna tıklayın
-5. Sonuçları görüntüleyin
-
----
-
-## Dışa Aktarma
-
-### Excel Dışa Aktarma
-
-1. Raporu oluşturun
-2. **Excel'e Aktar** butonuna tıklayın
-3. Dosya indirilir
-
-**Excel özellikleri:**
-- Filtrelenebilir tablolar
-- Formüller korunur
-- Pivot tablo desteği
-
-### PDF Dışa Aktarma
-
-1. Raporu oluşturun
-2. **PDF'e Aktar** butonuna tıklayın
-3. Dosya indirilir
-
-**PDF özellikleri:**
-- Yazdırmaya hazır format
-- Kurumsal başlık/altlık
-- Sayfa numaraları
-
----
-
-## Raporlama İpuçları
-
-!!! tip "Etkili Raporlama"
-    - Doğru filtreleri kullanın
-    - Karşılaştırmalı analizler yapın
-    - Düzenli rapor takibi yapın
-    - Trend analizlerini değerlendirin
-
----
-
-## Otomatik Raporlar
-
-Bazı raporlar otomatik olarak oluşturulabilir ve e-posta ile gönderilebilir. Bu özelliğin yapılandırması için sistem yöneticinize başvurun.
-
----
-
-## Özel Raporlar
-
-Standart raporlar dışında özel rapor ihtiyacınız varsa:
-
-1. İhtiyacınızı belirleyin
-2. Sistem yöneticinize talep iletin
-3. Özel rapor geliştirilir
-
-!!! note "Özel Rapor Talebi"
-    Özel raporlar teknik geliştirme gerektirir. Talep değerlendirme süreci birkaç gün sürebilir.
+**Raporlar** sayfasının altındaki **Eski Raporlar** tablosunda önceki yıllarda kullanılan veri yapısına ait raporlar
+yer alır: Toplam İzleme Kriteri Değerleri, Toplam Performans Göstergesi Değerleri, Birim Performansları, Toplam Kurumsal
+Değişken Değerleri, Kurumsal Değişkenler, Kurumsal Gösterge Değerleri (Eski Model), Uyarlama Raporu, Birim Bazında
+Performans Göstergeleri.

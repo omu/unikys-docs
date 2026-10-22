@@ -1,134 +1,59 @@
 # Sık Sorulan Sorular
 
-Bu sayfada Ünikys sisteminin kullanımıyla ilgili sık sorulan sorular ve cevapları yer almaktadır.
+## Hesap ve giriş
 
----
+??? question "Hesabımı nasıl oluştururum?"
+    Giriş ekranında **Hesap Oluştur** bağlantısı varsa **E-posta**, **Parola** ve **Parola (Tekrar)** alanlarını doldurup
+    **Oluştur** butonuna tıklayın. Bkz. [Sisteme Giriş](giris/sisteme-giris.md#hesap-olusturma).
 
-## Genel Sorular
+??? question "Hesabımı oluşturdum ama menüleri göremiyorum."
+    Yeni hesapta rol yoktur. Rolünüzün Admin tarafından atanması gerekir. Bkz. [Roller ve Yetkiler](roller.md#rol-atama).
 
-### Ünikys nedir?
+??? question "Parolamı unuttum, ne yapmalıyım?"
+    Giriş ekranındaki **Parola Sıfırla** bağlantısıyla e-posta adresinize parola yenileme bağlantısı gönderebilirsiniz.
+    Bkz. [Sisteme Giriş](giris/sisteme-giris.md#parola-sifirlama).
 
-Ünikys, üniversiteler için geliştirilmiş kapsamlı bir Kalite Yönetim Sistemidir. Süreç yönetimi, risk yönetimi, iç denetim, belge yönetimi ve performans takibi gibi kalite güvence süreçlerini dijital ortamda yönetmenizi sağlar.
+??? question "Parolamı nasıl değiştiririm?"
+    Sağ üstte e-posta adresinize tıklayın; menüde **Parolamı Değiştir** seçeneği varsa onunla yeni parolanızı ve mevcut parolanızı girip
+    **Değişiklikleri Kaydet** butonuna tıklayın.
 
-### Sisteme nasıl giriş yapabilirim?
+??? question "Arayüz dilini nasıl değiştiririm?"
+    Sayfanın en altındaki **EN** / **TR** bağlantısını kullanın.
 
-Kurumunuzun Ünikys adresine giderek, size verilen kullanıcı adı (e-posta) ve şifre ile giriş yapabilirsiniz. Detaylı bilgi için [Sisteme Giriş](giris/sisteme-giris.md) sayfasına bakınız.
+## Roller ve menüler
 
-### Şifremi unuttum, ne yapmalıyım?
+??? question "Bir menüyü göremiyorum."
+    Sol menüde yalnızca rolünüzün erişebildiği menüler görünür. Rolünüze göre görünen menüler için bkz.
+    [Rolüme Göre Kılavuz](rolume-gore.md).
 
-Şifre sıfırlama işlemi için sistem yöneticinize başvurmanız gerekmektedir.
+??? question "Bir ekranda oluşturma butonunu göremiyorum."
+    Üst çubuktaki **Seçili Yıl** aktif yıl değilse çoğu ekranda oluşturma butonları görünmez. Yıl seçebiliyorsanız aktif
+    yılı seçin.
 
----
+??? question "Birimimdeki rolleri kim atar?"
+    Birim rolleri (Veri Giriş Yetkilisi, Süreç Yöneticisi, Kalite Sorumlusu, Rapor Yetkilisi, Paydaş İletişim Görevlisi,
+    İç Kontrol Onay Yetkilisi, İç Kontrol Sorumlusu) Admin tarafından **Ayarlar** > **Birim Sorumluları** ekranında atanır.
 
-## Erişim ve Yetkilendirme
+## Modüller
 
-### Bazı menüleri göremiyorum, neden?
+??? question "Geri bildirimimin durumunu nasıl öğrenirim?"
+    **Geri Bildirimler** > **Geri Bildirim Durumunu Sorgula** menüsünde **Takip Kodu** alanına geri bildirimi
+    oluşturduğunuzda verilen takip numarasını yazıp **Sorgula** butonuna tıklayın. Bkz.
+    [Geri Bildirimler](moduller/geri-bildirimler.md).
 
-Menü görünürlüğü rolünüze göre belirlenir. Sadece yetkili olduğunuz modüllerin menülerini görebilirsiniz. Detaylı bilgi için [Roller ve Yetkiler](roller.md) sayfasına bakınız.
+??? question "DİF nedir, nereden oluşturulur?"
+    DİF, Düzeltici İyileştirici Faaliyet'tir. DİF, ilgili kaydın (geri bildirim, risk, süreç faaliyeti, yıllık eylem
+    planı uygulama adımı, yönetim görevi adımı, iç tetkik bulgusu) ekranındaki **DİF Oluştur** butonuyla oluşturulur.
+    Bkz. [İyileştirme Yönetimi](moduller/iyilestirme.md).
 
-### Yeni rol nasıl alabilirim?
+??? question "Yeni bir doküman eklenmesini ya da bir dokümanın güncellenmesini nasıl isterim?"
+    **Doküman Yönetimi** > **Doküman Talepleri** menüsünde **Doküman Talebi Oluştur** butonunu kullanın. Bkz.
+    [Doküman Yönetimi](moduller/dokuman-yonetimi.md).
 
-Rol atamaları sistem yöneticisi (Admin) tarafından yapılır. Yeni rol talebi için yöneticinize başvurun.
+??? question "İç tetkikçi olmak için ne yapmalıyım?"
+    **İç Tetkik** > **İç Tetkikçi Başvurusu Yap** menüsünden başvuru formunu doldurun. Bkz.
+    [İç Tetkik](moduller/ic-tetkik.md).
 
-### Birden fazla rolüm olabilir mi?
-
-Evet, bir kullanıcıya birden fazla rol atanabilir. Farklı rollerin yetkileri birleştirilir.
-
----
-
-## Veri Girişi
-
-### Veri girişi yapamıyorum, neden?
-
-Olası nedenler:
-
-- Aktif dönem kapalı olabilir
-- İlgili rol atanmamış olabilir
-- Yanlış yıl seçili olabilir
-
-### Yanlış veri girdim, düzeltebilir miyim?
-
-Onaylanmamış veriler düzenlenebilir. Onaylanmış veriler için sistem yöneticinize başvurun.
-
-### Veri girişi için son tarih ne zaman?
-
-Veri giriş dönemleri yönetim tarafından belirlenir. Aktif dönem tarihlerini sistem üzerinden görebilirsiniz.
-
----
-
-## Belgeler
-
-### Belge nasıl yükleyebilirim?
-
-1. İlgili belge kategorisine gidin
-2. "Belge Ekle" butonuna tıklayın
-3. Dosyayı seçin ve bilgileri doldurun
-4. Kaydedin
-
-### Hangi dosya formatları destekleniyor?
-
-- Dokümanlar: PDF, DOC, DOCX
-- Tablolar: XLS, XLSX
-- Görseller: JPG, PNG
-- Diğer: ZIP (sıkıştırılmış dosyalar)
-
-### Maksimum dosya boyutu nedir?
-
-Varsayılan olarak 10MB'dır. Daha büyük dosyalar için sistem yöneticinize başvurun.
-
----
-
-## Raporlama
-
-### Rapor nasıl oluşturabilirim?
-
-1. Raporlar menüsüne gidin
-2. İstediğiniz rapor türünü seçin
-3. Filtreleri belirleyin
-4. "Rapor Oluştur" butonuna tıklayın
-
-### Raporu Excel'e aktarabilir miyim?
-
-Evet, oluşturulan raporları Excel ve PDF formatında indirebilirsiniz.
-
-### Özel rapor talep edebilir miyim?
-
-Standart raporlar dışında ihtiyacınız varsa, sistem yöneticinize talep iletebilirsiniz.
-
----
-
-## Teknik Sorunlar
-
-### Sistem yavaş çalışıyor, ne yapmalıyım?
-
-- Tarayıcı önbelleğini temizleyin
-- Tarayıcınızı güncelleyin
-- Farklı bir tarayıcı deneyin
-- İnternet bağlantınızı kontrol edin
-
-### Oturum sürem doldu uyarısı alıyorum
-
-Güvenlik nedeniyle uzun süre işlem yapılmadığında oturum sonlandırılır. Tekrar giriş yapmanız gerekmektedir.
-
-### Hata mesajı alıyorum, ne yapmalıyım?
-
-- Hata mesajını not alın
-- Yaptığınız işlemi kaydedin
-- Sistem yöneticinize bildirin
-
----
-
-## İletişim
-
-### Teknik destek için kime başvurmalıyım?
-
-Kurumunuzun sistem yöneticisine başvurabilirsiniz.
-
-### Öneri ve geri bildirim nasıl iletebilirim?
-
-Sistem içindeki "Geri Bildirim" modülünü kullanarak önerilerinizi iletebilirsiniz.
-
----
-
-!!! tip "Sorununuz Çözülmedi mi?"
-    Bu sayfada cevabını bulamadığınız sorularınız için sistem yöneticinize başvurun.
+??? question "Raporları nereden alırım?"
+    Sol menüdeki **Raporlar** ekranında rolünüzün erişebildiği raporlar listelenir. Bkz.
+    [Raporlar](moduller/raporlar.md).

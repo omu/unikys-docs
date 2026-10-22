@@ -1,113 +1,97 @@
 # Süreç Yönetimi
 
-Bu modül, kurumsal süreçlerin tanımlanması, takibi ve yönetimini sağlar.
+Süreç kartlarının (alan, süreç ve faaliyetler) ve görev tanımlarının tutulduğu modüldür. Süreç kartları her yıl için ayrı
+tanımlanır.
 
-!!! info "Erişim"
-    Bu modül tüm kullanıcılara açıktır. Ancak **Benim Süreçlerim** alt menüsü sadece süreç rolleri için görünür.
+## Bu sayfayı kimler kullanır
 
-## Alt Menüler
+| Rol | Yapacağı işler |
+|-----|----------------|
+| Admin | [Süreç kartlarını önceki yıldan kopyalama](#surec-kartlarini-onceki-yildan-kopyalama), [Alan, süreç ve faaliyet oluşturma](#alan-surec-ve-faaliyet-olusturma), [Görev tanımı oluşturma](#gorev-tanimi-olusturma) |
+| Kalite Sorumlusu, Süreç Yöneticisi, Süreç Koordinatörü | [Süreçlerim](#surecleri-goruntuleme) |
+| Kalite Sorumlusu, Süreç Yöneticisi | [Faaliyetten DİF veya düzeltme başlatma](#faaliyetten-dif-veya-duzeltme-baslatma) |
+| Tüm kullanıcılar | [Süreç kartlarını ve görev tanımlarını görüntüleme](#surecleri-goruntuleme) |
 
-### Ana Süreçler
+!!! info "Seçili yıl"
+    Süreç kartlarındaki (alan, süreç, faaliyet) oluşturma ve kopyalama butonları yalnızca üst çubuktaki **Seçili Yıl**
+    aktif yıl olduğunda görünür.
 
-Kurumun üst düzey süreçlerinin listelendiği bölüm.
+## Süreç kartlarını önceki yıldan kopyalama {#surec-kartlarini-onceki-yildan-kopyalama}
 
-**İşlevler:**
+!!! note "Rol"
+    Admin
 
-- Ana süreç görüntüleme
-- Alt süreçlere erişim
-- Süreç faaliyetlerini inceleme
+1. **Süreç Yönetimi** > **Süreç Kartları** menüsüne girin.
+2. **Eksik Süreçleri Önceki Yıldan Kopyala** butonuna tıklayın.
 
-**Ana Süreç Yapısı:**
+## Alan, süreç ve faaliyet oluşturma {#alan-surec-ve-faaliyet-olusturma}
 
-```
-Ana Süreç
-├── Alt Süreç 1
-│   ├── Süreç Faaliyeti 1.1
-│   └── Süreç Faaliyeti 1.2
-└── Alt Süreç 2
-    └── Süreç Faaliyeti 2.1
-```
+!!! note "Rol"
+    Admin
 
----
+**Alan:**
 
-### Benim Süreçlerim
+1. **Süreç Yönetimi** > **Süreç Kartları** menüsüne girin.
+2. **Yeni Alan Oluştur** butonuna tıklayın.
+3. **Kod** ve **Alan** alanlarını doldurun ve **Oluştur** butonuna tıklayın.
 
-Kullanıcının sorumlu olduğu süreçlerin listelendiği bölüm.
+**Süreç:**
 
-!!! note "Kimler Görebilir?"
-    Bu menü sadece **Süreç Sorumlusu**, **Süreç Temsilcisi** ve **Süreç Koordinatörü** rollerine sahip kullanıcılar tarafından görülebilir.
+1. Alan satırında **Göster** butonuna tıklayın.
+2. **Yeni Süreç Oluştur** butonuna tıklayın.
+3. **Süreç**, **Kod**, **Sürecin Amacı**, **Süreç Koordinatörü** ve **Süreçten Sorumlu Birimler** alanlarını doldurun.
+4. **Yetki ve Sorumluluklar**, **Girdiler**, **Kaynaklar** ve **Çıktılar** alanlarını doldurun.
+5. Gerekiyorsa **Revizyon Numarası**, **Revizyon Gerekçesi** ve **Önceki Yıldan Bağlantılı Olduğu Süreç** alanlarını
+   doldurun.
+6. **Oluştur** butonuna tıklayın.
 
-**İşlevler:**
+Süreç Koordinatörü rolü bu formdaki **Süreç Koordinatörü** alanıyla verilir.
 
-- Sorumlu olunan süreçleri görüntüleme
-- Süreç faaliyetlerini yönetme
-- Süreç dokümanlarına erişim
+**Faaliyet:**
 
----
+1. Sürecin sayfasında (süreç kartı) **Yeni Faaliyet Oluştur** butonuna tıklayın.
+2. **Faaliyet**, **Kod**, **Faaliyetin Amacı**, **Faaliyet Adımları** ve **Faaliyetin Yürütüldüğü Birimler** alanlarını
+   doldurun.
+3. Gerekiyorsa **Görevli**, **Bilgi/Tarif Dokümanları**, **Kayıt Ortamı**, **Gösterge/Alt Etiketi** ve
+   **İzleme Kriterleri** alanlarını doldurun.
+4. **Oluştur** butonuna tıklayın.
 
-### Görev Tanımları
+## Görev tanımı oluşturma {#gorev-tanimi-olusturma}
 
-Süreçlerde yer alan görevlerin tanımlandığı bölüm.
+!!! note "Rol"
+    Admin
 
-**İşlevler:**
+1. **Süreç Yönetimi** > **Görev Tanımları** menüsüne girin.
+2. **Yeni Görev Tanımı Oluştur** butonuna tıklayın.
+3. **Görev Adı**, **Kod**, **Süreç** ve **Görev, Yetki ve Sorumluluklar** alanlarını doldurun.
+4. Gerekiyorsa **Vekalet Durumu**, **Aranan Nitelikler** ve **Hassas Görev** alanlarını doldurun.
+5. **Durum** alanını seçin. Pasif yapılan görev tanımı için **Pasifleştirme Gerekçesi** alanını doldurun.
+6. **Oluştur** butonuna tıklayın.
 
-- Görev tanımı oluşturma
-- Sorumluluk matriksi belirleme
-- Görev dokümanlarını yönetme
+Tüm görev tanımlarında ortak olan metni düzenlemek için **Ortak Sorumluluklar** butonuna tıklayın.
 
-**Görev Tanımı Oluşturma:**
+## Süreçleri görüntüleme {#surecleri-goruntuleme}
 
-1. **Süreç Yönetimi > Görev Tanımları** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Görev adı ve açıklamasını girin
-4. İlgili süreç faaliyetini seçin
-5. Sorumlu birimleri belirleyin
-6. **Kaydet** butonuna tıklayın
+!!! note "Rol"
+    Tüm kullanıcılar (**Süreçlerim**: Kalite Sorumlusu, Süreç Yöneticisi, Süreç Koordinatörü)
 
----
+- **Süreç Yönetimi** > **Süreç Kartları**: alan satırında **Göster**, ardından süreç satırında **Göster** butonuna
+  tıklayın. Süreç kartı açılır. Kartın PDF çıktısını almak için **PDF Oluştur** butonuna tıklayın.
+- **Süreç Yönetimi** > **Süreçlerim**: biriminizin sorumlu olduğu ya da koordinatörü olduğunuz süreçler ve biriminizde yürütülen faaliyetler
+  listelenir.
+- **Süreç Yönetimi** > **Görev Tanımları**: görev tanımlarını listeler. Tümünü indirmek için
+  **Görev Tanımlarını İndir** butonunu kullanın.
 
-## Süreç Yapısı
+## Faaliyetten DİF veya düzeltme başlatma {#faaliyetten-dif-veya-duzeltme-baslatma}
 
-### Ana Süreç
+!!! note "Rol"
+    Kalite Sorumlusu, Süreç Yöneticisi
 
-En üst düzey süreç kategorisi. Örnek: "Yönetim Süreçleri", "Eğitim Süreçleri"
+1. **Süreç Yönetimi** > **Süreçlerim** (veya **Süreç Kartları**) menüsünden ilgili süreç kartını açın.
+2. **Faaliyetler** bölümünde ilgili faaliyetin panelinde (faaliyet panelleri **Süreçlerim** sayfasının altında da
+   bulunur):
+    - DİF planlamak için **DİF Oluştur** butonuna tıklayın.
+    - Düzeltme kaydı için **Düzeltme Yap** butonuna tıklayın.
+3. Açılan formu doldurun ve **Oluştur** butonuna tıklayın.
 
-### Alt Süreç
-
-Ana sürecin altında yer alan detay süreçler. Örnek: "Stratejik Planlama", "Ders Planlaması"
-
-### Süreç Faaliyeti
-
-Alt süreçlerin içerdiği spesifik faaliyetler.
-
----
-
-## Süreç Sorumlulukları
-
-| Rol | Sorumluluk |
-|-----|-----------|
-| Süreç Koordinatörü | Süreç genel yönetimi |
-| Süreç Sorumlusu | Birim bazlı süreç takibi |
-| Süreç Temsilcisi | Süreç faaliyeti yürütme |
-
----
-
-## Süreç Dokümanları
-
-Her süreç için aşağıdaki dokümanlar tanımlanabilir:
-
-- Süreç akış şeması
-- Prosedür dokümanı
-- İş talimatları
-- Formlar ve şablonlar
-
-Dokümanlar süreç detay sayfasından görüntülenebilir.
-
----
-
-## İpuçları
-
-!!! tip "Verimli Süreç Yönetimi"
-    - Süreç faaliyetlerini düzenli olarak gözden geçirin
-    - Sorumlulukları net olarak tanımlayın
-    - Süreç akışını görselleştirin
+DİF ve düzeltme formları [İyileştirme Yönetimi](iyilestirme.md) sayfasında anlatılır.

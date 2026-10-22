@@ -1,140 +1,75 @@
 # İç Kontrol
 
-Bu modül, iç kontrol standartlarının ve faaliyetlerinin yönetimini sağlar. Kamu iç kontrol standartlarına uyum bu modül üzerinden takip edilir.
+Kamu iç kontrol standartlarına uyum eylem planlarının ve iç kontrol faaliyetlerinin (İKF) yürütüldüğü modüldür.
 
-!!! info "Erişim"
-    Bu modüle **Admin**, **SGDB Admin**, **Üniversite Yönetimi**, **İç Kontrol Sorumlusu** ve **İç Kontrol Onay Yetkisi** rolleri erişebilir.
+!!! warning "Not"
+    Bu modül SGDB sorumluluğundadır; içeriği SGDB ile birlikte güncellenecektir.
 
-## Alt Menüler
+## Bu sayfayı kimler kullanır
 
-### İç Kontrol Faaliyetleri
+| Rol | Yapacağı işler |
+|-----|----------------|
+| Admin, SGDB Admini | [İç kontrol tanımlama](#ic-kontrol-tanimlama) |
+| Admin | [İKF oluşturma](#ikf-olusturma), [İKF onayı](#ikf-onayi) |
+| İç Kontrol Sorumlusu | [İKF oluşturma](#ikf-olusturma), [Faaliyet adımlarını tamamlama](#faaliyet-adimlarini-tamamlama) |
+| İç Kontrol Onay Yetkilisi | [İKF onayı](#ikf-onayi) |
 
-İç kontrol kapsamında yürütülen faaliyetlerin takip edildiği bölüm.
+## İç kontrol tanımlama {#ic-kontrol-tanimlama}
 
-**İşlevler:**
+!!! note "Rol"
+    Admin, SGDB Admini
 
-- Faaliyet listesini görüntüleme
-- Faaliyet durumunu güncelleme
-- Kanıt dokümanları ekleme
-- İlerleme takibi
+1. **İç Kontrol** > **İç Kontrol Yönetimi** menüsüne girin.
+2. **Yeni İç Kontrol** butonuna tıklayın.
+3. **İsim**, **Açıklama** ve **Durum** alanlarını doldurun. Birime özel bir iç kontrol için **İlgili Birimler** alanından
+   birimleri seçin; boş bırakılırsa genel iç kontrol olur.
+4. **Oluştur** butonuna tıklayın.
+5. İç kontrolün sayfasında **Yeni Bileşen** butonuyla bileşenleri ekleyin.
+6. Her bileşenin sayfasında **Yeni Standart**, her standardın sayfasında **Yeni Genel Şart** butonunu kullanın.
+7. Genel şartın sayfasında **Yeni Eylem** butonuna tıklayın. **Kod No**, **Öngörülen Eylem veya Eylemler**,
+   **Sorumlu Birimler**, **İşbirliği Yapılacak Birim**, **Çıktı/Sonuç**, **Tamamlanma Tarihi** ve **Açıklama**
+   alanlarını doldurun ve **Oluştur** butonuna tıklayın.
 
----
+İç kontrolün tamamını indirmek için iç kontrolün sayfasında **Excel İndir** butonuna tıklayın.
 
-### İç Kontrol Yönetimi
+## İKF oluşturma {#ikf-olusturma}
 
-İç kontrol standartlarının tanımlandığı ve yönetildiği bölüm.
+!!! note "Rol"
+    Admin, İç Kontrol Sorumlusu
 
-!!! note "Erişim"
-    Sadece **Admin** ve **SGDB Admin** tarafından yönetilebilir.
+1. **İç Kontrol** > **İdare Kamu İç Kontrol Standartlarına Uyum Eylem Planı** (birime özel plan için
+   **Birim İç Kontrol Standartlarına Uyum Eylem Planı**) menüsüne girin.
+2. Plan listesi açılırsa ilgili planın satırında **Detay** butonuna tıklayın.
+3. İlgili eylemin satırında **İç Kontrol Faaliyeti (İKF) Oluştur** butonuna tıklayın.
+4. **Birim** alanını kontrol edin (**İç Kontrol Eylemi** seçtiğiniz eylemle hazır gelir) ve **Uygulanması Planlanan
+   Faaliyet** alanını doldurun.
+5. **Faaliyet Adımı Ekle** butonuyla adımları ekleyin. Her adım için **Faaliyet Adımı** ve **Tamamlanma Tarihi**
+   alanlarını doldurun.
+6. **Oluştur** butonuna tıklayın.
 
-**İç Kontrol Yapısı:**
+Oluşturulan İKF'ler **İç Kontrol** > **İç Kontrol Faaliyetleri (İKF)** menüsünde listelenir.
 
-```
-İç Kontrol Sistemi
-├── Kontrol Ortamı
-│   ├── Standart 1: Etik Değerler ve Dürüstlük
-│   ├── Standart 2: Misyon, Organizasyon Yapısı
-│   └── ...
-├── Risk Değerlendirme
-│   └── ...
-├── Kontrol Faaliyetleri
-│   └── ...
-├── Bilgi ve İletişim
-│   └── ...
-└── İzleme
-    └── ...
-```
+## İKF onayı {#ikf-onayi}
 
-**İç Kontrol Standardı Oluşturma:**
+!!! note "Rol"
+    İç Kontrol Onay Yetkilisi, Admin
 
-1. **İç Kontrol > İç Kontrol Yönetimi** menüsüne gidin
-2. İlgili bileşene tıklayın
-3. **Yeni Standart Ekle** butonuna tıklayın
-4. Standart bilgilerini girin
-5. Alt maddeleri tanımlayın
-6. **Kaydet** butonuna tıklayın
+1. **İç Kontrol** > **İç Kontrol Faaliyetleri (İKF)** menüsüne girin.
+2. İlgili İKF'nin satırında **Göster** butonuna tıklayın.
+3. **İKF'yi Onayla/Reddet** butonuna tıklayın.
+4. **İKF'yi Onaylıyor Musunuz?** alanından **Evet** ya da **Hayır** seçin, **Değerlendirme** alanını doldurun ve
+   **Oluştur** butonuna tıklayın.
 
----
+## Faaliyet adımlarını tamamlama {#faaliyet-adimlarini-tamamlama}
 
-### İç Kontrol Eylem Planları
+!!! note "Rol"
+    İç Kontrol Sorumlusu
 
-İç kontrol kapsamında planlanan eylemlerin yönetildiği bölüm.
+1. **İç Kontrol** > **İç Kontrol Faaliyetleri (İKF)** menüsünden onaylanmış İKF'nin sayfasını açın.
+2. İlgili adımın satırında **Tamamla** butonuna tıklayın.
+3. **Faaliyet Adımı Tamamlandı Mı?** alanını seçin, **Açıklama** alanını doldurun, gerekiyorsa **Kanıt** yükleyin ve
+   **Oluştur** butonuna tıklayın.
 
-**Eylem Planı Görüntüleme:**
+Yapılan tamamlamayı geri almak için **Tamamlamayı Sil** butonunu kullanın.
 
-1. **İç Kontrol > İç Kontrol Eylem Planları** menüsüne gidin
-2. İlgili yılı seçin
-3. Eylem planını görüntüleyin
-4. İlerleme durumunu takip edin
-
----
-
-### Birime Özel İç Kontrol Eylem Planları
-
-Birim bazında atanmış iç kontrol faaliyetlerinin görüntülendiği bölüm.
-
-!!! note "Erişim"
-    Bu menü sadece birime özel iç kontrol faaliyeti atanmış kullanıcılar tarafından görülebilir.
-
----
-
-## İç Kontrol Bileşenleri
-
-| Bileşen | Açıklama |
-|---------|----------|
-| **Kontrol Ortamı** | Kurumun iç kontrol kültürü ve ortamı |
-| **Risk Değerlendirme** | Risklerin tanımlanması ve analizi |
-| **Kontrol Faaliyetleri** | Risklere karşı alınan önlemler |
-| **Bilgi ve İletişim** | Bilgi akışı ve iletişim kanalları |
-| **İzleme** | Sistemin etkinliğinin değerlendirilmesi |
-
----
-
-## Faaliyet Durumları
-
-| Durum | Açıklama |
-|-------|----------|
-| Planlandı | Henüz başlanmamış |
-| Devam Ediyor | Aktif çalışma var |
-| Tamamlandı | Faaliyet tamamlandı |
-| Onay Bekliyor | Onay sürecinde |
-| Onaylandı | Onay verildi |
-
----
-
-## Faaliyet Güncelleme
-
-1. İlgili faaliyetin detay sayfasına gidin
-2. **Güncelle** butonuna tıklayın
-3. İlerleme durumunu girin
-4. Kanıt dokümanlarını ekleyin
-5. **Kaydet** butonuna tıklayın
-
-!!! warning "Kanıt Önemi"
-    Her faaliyet için destekleyici kanıt dokümanları eklenmelidir. Kanıtsız faaliyetler tamamlanmış sayılmaz.
-
----
-
-## Onay Süreci
-
-```
-1. Sorumlu faaliyeti tamamlar
-   ↓
-2. Kanıt dokümanlarını yükler
-   ↓
-3. Onaya sunar
-   ↓
-4. Onay yetkisi değerlendirir
-   ↓
-5. Onay/Red kararı verilir
-```
-
----
-
-## Raporlama
-
-İç kontrol ile ilgili raporlara **Raporlar** menüsünden erişebilirsiniz:
-
-- İç kontrol genel durum raporu
-- Bileşen bazlı ilerleme raporu
-- Birim bazlı faaliyet raporu
+İç kontrol raporları için [Raporlar](raporlar.md) sayfasına bakın.

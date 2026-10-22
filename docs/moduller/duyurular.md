@@ -1,89 +1,49 @@
 # Duyurular
 
-Bu modül, sistem genelinde duyuruların oluşturulması ve yönetimini sağlar.
+Bu modülde tüm kullanıcılara ya da belirli birimlere duyuru yapılır.
 
-!!! info "Erişim"
-    Bu modüle sadece **Admin** ve **Üniversite Yönetimi** rolleri erişebilir.
+## Bu sayfayı kimler kullanır
 
-## Duyuru Yönetimi
+| Rol | Yapacağı işler |
+|-----|----------------|
+| Admin | [Duyuru oluşturma](#duyuru-olusturma), [Duyuru düzenleme ve silme](#duyuru-duzenleme) |
+| Tüm kullanıcılar | [Duyuruları görüntüleme](#duyurulari-goruntuleme) |
 
-### Duyuru Oluşturma
+## Duyuru oluşturma {#duyuru-olusturma}
 
-1. **Duyurular** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Duyuru başlığını girin
-4. İçeriği yazın (zengin metin editörü kullanılabilir)
-5. Yayın tarihini belirleyin
-6. Hedef kitleyi seçin (opsiyonel)
-7. **Yayınla** butonuna tıklayın
+!!! note "Rol"
+    Admin
 
-### Duyuru Alanları
+1. **Duyurular** menüsüne girin.
+2. **Duyuru Oluştur** butonuna tıklayın.
+3. **Başlık**, **Özet** ve **İçerik** alanlarını doldurun.
+4. Duyuru belirli birimler içinse **Birimler** alanından birimleri seçin. Tüm kullanıcılara yapılacak duyuruda
+   **Birimler** alanını boş bırakın.
+5. Duyurunun yayında olması için **Yayınlansın mı?** kutusunu işaretleyin.
+6. **Oluştur** butonuna tıklayın.
 
-| Alan | Açıklama |
-|------|----------|
-| Başlık | Duyurunun kısa başlığı |
-| İçerik | Detaylı açıklama |
-| Yayın Tarihi | Duyurunun görünür olacağı tarih |
-| Bitiş Tarihi | Duyurunun gizleneceği tarih (opsiyonel) |
-| Öncelik | Normal/Önemli/Acil |
-| Hedef Kitle | Tüm kullanıcılar veya belirli roller |
+## Duyuru düzenleme ve silme {#duyuru-duzenleme}
 
----
+!!! note "Rol"
+    Admin
 
-## Duyuru Düzenleme
+1. **Duyurular** menüsüne girin.
+2. Gerekirse arama alanlarını (**Başlık**, **Özet**, **Birimler**, **Yayınlansın mı?**, **Başlangıç Tarihi**,
+   **Bitiş Tarihi**) doldurup **Arama Yap** butonuna tıklayın.
+3. Duyurunun satırındaki **Düzenle** butonuna tıklayın, değişiklikleri yapın ve **Kaydet** butonuna tıklayın.
+4. Duyuruyu silmek için satırdaki **Sil** butonuna tıklayın ve onaylayın.
 
-1. Duyuru listesinden ilgili duyuruyu bulun
-2. **Düzenle** butonuna tıklayın
-3. Gerekli değişiklikleri yapın
-4. **Kaydet** butonuna tıklayın
+Bir duyuruyu silmeden yayından kaldırmak için düzenleme ekranında **Yayınlansın mı?** kutusunun işaretini kaldırın.
 
----
+## Duyuruları görüntüleme {#duyurulari-goruntuleme}
 
-## Duyuru Silme
+!!! note "Rol"
+    Tüm kullanıcılar
 
-1. Duyuru listesinden ilgili duyuruyu bulun
-2. **Sil** butonuna tıklayın
-3. Onay verin
+Yayındaki duyurular **Anasayfa**da görünür:
 
-!!! warning "Silme İşlemi"
-    Silinen duyurular geri getirilemez. Silmek yerine bitiş tarihi belirlemeyi tercih edebilirsiniz.
+- **Duyurular:** tüm kullanıcılara yapılan duyurular
+- **Biriminize Özel Duyurular:** Süreç Yöneticisi, Kalite Sorumlusu ya da Veri Giriş Yetkilisi olduğunuz birimlere
+  yapılan duyurular
 
----
-
-## Duyuru Görüntüleme
-
-Kullanıcılar duyuruları:
-
-- Ana sayfada görür
-- Bildirim olarak alır (yapılandırmaya göre)
-- Duyurular arşivinden erişir
-
----
-
-## Duyuru Öncelikleri
-
-| Öncelik | Görünüm | Kullanım |
-|---------|---------|----------|
-| **Normal** | Standart | Genel bilgilendirmeler |
-| **Önemli** | Vurgulu | Dikkat edilmesi gerekenler |
-| **Acil** | Kırmızı uyarı | Kritik duyurular |
-
----
-
-## Hedef Kitle Belirleme
-
-Duyurular belirli kullanıcı gruplarına yönlendirilebilir:
-
-- **Tüm Kullanıcılar**: Sisteme giriş yapan herkes
-- **Belirli Roller**: Sadece seçilen roller
-- **Belirli Birimler**: Sadece seçilen birimler
-
----
-
-## İpuçları
-
-!!! tip "Etkili Duyurular"
-    - Başlığı kısa ve açıklayıcı tutun
-    - Önemli bilgileri başta verin
-    - Gerekli aksiyonları net belirtin
-    - Bitiş tarihi olan duyurulara süre ekleyin
+Tüm listeyi görmek için bölümdeki **Tümünü Göster** bağlantısına tıklayın.

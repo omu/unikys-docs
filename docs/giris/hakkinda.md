@@ -1,55 +1,40 @@
 # Ünikys Hakkında
 
-Ünikys, üniversiteler için geliştirilmiş kapsamlı bir **Kalite Yönetim Sistemi**dir. Yükseköğretim kurumlarının kalite güvence süreçlerini dijital ortamda yönetmelerini sağlar.
+Ünikys, üniversitelerin kalite güvence çalışmalarını tek bir sistem üzerinden yürütmesi için geliştirilmiş bir Kalite
+Yönetim Sistemi'dir.
 
-## Temel Özellikler
+## Modüller
 
-### Süreç Yönetimi
-- Ana süreç ve alt süreçlerin tanımlanması
-- Süreç faaliyetlerinin takibi
-- Görev tanımları ve sorumluluklar
+| Modül | Kapsam |
+|-------|--------|
+| Veri ve Göstergeler | Gösterge etiketleri, kurumsal veriler, kurumsal göstergeler; birim veri ve hedef girişi ile onayı |
+| Süreç Yönetimi | Süreç kartları (alan, süreç, faaliyet), görev tanımları |
+| Risk ve Fırsat Yönetimi | Risk seviyeleri, riskler, fırsatlar, hususlar, ilgili taraflar |
+| Geri Bildirimler | Paydaş geri bildirimleri ve takibi |
+| İç Değerlendirme | Birim İç Değerlendirme Raporu (BİDR) ve Kurum İç Değerlendirme Raporu (KİDR) |
+| İç Tetkik | İç tetkikçi başvuruları, tetkik hazırlığı, tetkik işlemleri, iç tetkik raporları ve değerlendirmeler |
+| İyileştirme Yönetimi | Uygunsuzluklar, düzeltmeler, DİF (Düzeltici İyileştirici Faaliyet), yönetim görevleri |
+| Eylem Planı | Eylem alanları, eylem planları, yıllık eylem planı |
+| İç Kontrol | İç kontrol standartlarına uyum eylem planları ve iç kontrol faaliyetleri |
+| Toplantı Karar Yönetimi | Toplantılar, gündem, kararlar ve karar takibi |
+| Doküman Yönetimi | Dokümanlar ve doküman talepleri |
+| Duyurular | Genel ve birime özel duyurular |
+| Raporlar | Modüllere ait raporlar |
+| Birim | Birimim ve birim dokümanları |
+| Ayarlar | Takvimler, yıllar, dönemler, kullanıcılar, rol tanımları, birimler, birim sorumluları |
 
-### Risk ve Fırsat Yönetimi
-- Risk tanımlama ve değerlendirme
-- Fırsat yönetimi
-- Risk aktivitelerinin takibi
+İç Değerlendirme ve İç Tetkik iki ayrı modüldür.
 
-### Performans İzleme
-- Kurumsal göstergeler
-- Veri girişi ve onay süreçleri
-- Hedef takibi
+## Kullanıcı rolleri
 
-### İç Denetim ve Değerlendirme
-- İç denetim planlaması
-- Denetçi atamaları
-- Bulgu ve eylem takibi
+Sistemde 16 sabit kullanıcı rolü vardır:
 
-### İyileştirme Yönetimi
-- Doküman İyileştirme Formu (DİF)
-- Düzeltici eylemler
-- Uygunsuzluk yönetimi
+- *Genel roller:* Süper Admin, Admin, Üniversite Yöneticisi, SGDB Admini, Veri ve Göstergeler Admini
+- *Birim rolleri:* Veri Giriş Yetkilisi, Süreç Yöneticisi, Kalite Sorumlusu, Rapor Yetkilisi, Paydaş İletişim
+  Görevlisi, İç Kontrol Sorumlusu, İç Kontrol Onay Yetkilisi
+- *Görevlendirmeyle verilen roller:* Süreç Koordinatörü, İç Tetkikçi, Komisyon Üyesi, Etiket Sorumlusu
 
-### Belge Yönetimi
-- Doküman kategorileri
-- Belge talep ve onay süreçleri
-- Versiyon kontrolü
+Bunlara ek olarak, Admin'in **Ayarlar** > **Rol Tanımları** ekranında oluşturduğu menü bazlı roller kullanıcılara
+atanabilir.
 
-## Kullanıcı Tipleri
-
-Sistemde farklı yetki seviyelerine sahip kullanıcı rolleri bulunmaktadır:
-
-| Rol Kategorisi | Açıklama |
-|----------------|----------|
-| **Yönetim Rolleri** | Admin, Üniversite Yönetimi |
-| **Süreç Rolleri** | Süreç Sorumlusu, Süreç Temsilcisi, Süreç Koordinatörü |
-| **Denetim Rolleri** | İç Denetçi, Komisyon Üyesi |
-| **Veri Rolleri** | Kalite Temsilcisi, Etiket Sorumlusu |
-
-Detaylı bilgi için [Roller ve Yetkiler](../roller.md) sayfasına bakınız.
-
-## Teknik Altyapı
-
-- **Web Tabanlı**: Modern tarayıcılardan erişilebilir
-- **Çok Kiracılı**: Farklı üniversiteler için özelleştirilebilir
-- **Güvenli**: Rol tabanlı erişim kontrolü
-- **Raporlama**: Excel ve PDF formatında dışa aktarım
+Ayrıntılar: [Roller ve Yetkiler](../roller.md), [Rolüme Göre Kılavuz](../rolume-gore.md)

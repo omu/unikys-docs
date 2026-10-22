@@ -1,99 +1,68 @@
 # Arayüz Tanıtımı
 
-Bu sayfa, Ünikys sisteminin temel arayüz öğelerini tanıtmaktadır.
+Ünikys ekranı üç bölümden oluşur: sol menü, üst çubuk ve içerik alanı.
 
-## Ana Bileşenler
+## Sol menü {#sol-menu}
 
-Sistem arayüzü üç ana bölümden oluşur:
+Sol menüde yalnızca rolünüzün erişebildiği menüler görünür. Menüler aşağıdaki sıradadır:
 
-1. **Sol Menü (Sidebar)** - Modüllere erişim
-2. **Üst Çubuk (Topnav)** - Kullanıcı işlemleri ve ayarlar
-3. **İçerik Alanı** - Ana çalışma alanı
+| Menü | Alt menüler |
+|------|-------------|
+| **Anasayfa** | — |
+| **Veri ve Göstergeler** | **Gösterge Etiketleri**, **Veri Kütüphanesi**, **Kurumsal Göstergeler**, **Veri ve Hedef Yönetimi** |
+| **Veri ve Hedef Girişi** | **Kurumsal Veri Girişi**, **Hedef Girişi**, **Üst Hedef Girişi** |
+| **Veri ve Hedef Onayı** | **Veri Onayı Talepleri**, **Hedef Onayı Talepleri** |
+| **Süreç Yönetimi** | **Süreç Kartları**, **Süreçlerim**, **Görev Tanımları** |
+| **Risk ve Fırsat Yönetimi** | **Risk Seviyeleri**, **Fırsatlar**, **Riskler**, **Risk Aktiviteleri**, **Risk Güncelleme Formları**, **Hususlar**, **İlgili Taraflar**, **Risklerim**, **Pasif Riskler**, **Fırsatlarım** |
+| **Geri Bildirimler** | **Geri Bildirim Konuları**, **Geri Bildirimler**, **Geri Bildirim Oluştur**, **Geri Bildirim Durumunu Sorgula** |
+| **İç Değerlendirme** | **İç Değerlendirmeler**, **Birim İç Değerlendirme**, **Kurum İç Değerlendirme**, **Gözlem** |
+| **İç Tetkik** | **İç Tetkikler**, **Genel İç Tetkik İşlemleri**, **İç Tetkikçi Başvuruları**, **İç Tetkikçi Başvurusu Yap**, **İç Tetkik Katılım Başvurusu**, **İç Tetkikçi Görevlerim**, **İç Tetkik Raporları**, **İç Tetkikçi Performans İzlemesi** |
+| **İyileştirme Yönetimi** | **Uygunsuzluklar**, **Düzeltmeler**, **Düzeltmelerim**, **DİF**, **Yönetim Görevleri** |
+| **Eylem Planı** | **Eylem Planları**, **Eylem Alanları**, **Yıllık Eylem Planı** |
+| **İç Kontrol** | **İç Kontrol Faaliyetleri (İKF)**, **İç Kontrol Yönetimi**, **İdare Kamu İç Kontrol Standartlarına Uyum Eylem Planı**, **Birim İç Kontrol Standartlarına Uyum Eylem Planı** |
+| **Toplantı Karar Yönetimi** | **Toplantılar**, **Karar Listesi**, **Toplantı Türleri**, **Stratejik Plan Tanımlama** |
+| **Doküman Yönetimi** | **Doküman Talepleri**, **Dokümanlar** |
+| **Duyurular** | — |
+| **Raporlar** | — |
+| **Birim** | **Birimim**, **Birim Dokümanları** |
+| **Ayarlar** | **Takvimler**, **Yıllar**, **Dönemler**, **Kullanıcılar**, **Rol Tanımları**, **Birimler**, **Birim Sorumluları**, **Aktiviteler** |
 
-## Sol Menü (Sidebar)
+Sol menüyü üst çubuğun solundaki menü simgesiyle açıp kapatabilirsiniz.
 
-Sol menü, sistemdeki tüm modüllere erişim sağlar. Menü öğeleri kullanıcı rolüne göre değişir.
+## Üst çubuk {#ust-cubuk}
 
-### Menü Yapısı
+- *Yıl:* Admin, Üniversite Yöneticisi ve Veri ve Göstergeler Admini için **Seçili Yıl** açılır listesi görünür.
+  Listeden başka bir yıl seçildiğinde ekranlar o yılın kayıtlarını gösterir. Aktif yıl listede **Aktif Yıl** olarak
+  işaretlidir. Diğer kullanıcılar yalnızca **Aktif Yıl** bilgisini görür. Raporlar ve **Yıllık Eylem Planı**
+  ekranlarında yıl seçimi herkese açıktır.
+- *Bildirimler:* zil simgesine tıklayınca son bildirimler listelenir. **Tümünü göster** bağlantısı tüm bildirimlerin
+  listelendiği sayfayı açar; **Tümünü okundu olarak işaretle** butonu bu sayfadadır.
+- *Kullanıcı menüsü:* sağ üstte e-posta adresiniz görünür. Tıklayınca **Profil** ve **Çıkış** seçenekleri açılır.
+  Kurumunuzda kullanılıyorsa **Parolamı Değiştir** seçeneği de bu menüdedir. Bkz. [Sisteme Giriş](sisteme-giris.md).
 
-- **Ana Sayfa**: Sistem ana sayfası
-- **Veri ve Göstergeler**: Kurumsal veri yönetimi
-- **Süreç Yönetimi**: Süreç tanımlama ve takibi
-- **Risk Yönetimi**: Risk ve fırsat yönetimi
-- **Geri Bildirimler**: Paydaş geri bildirimleri
-- **İç Değerlendirme**: Kurum içi değerlendirmeler
-- **İç Denetim**: Denetim süreçleri
-- **İyileştirme Yönetimi**: DİF ve düzeltici eylemler
-- **Eylem Planı**: Yıllık eylem planları
-- **İç Kontrol**: İç kontrol standartları
-- **Belge Yönetimi**: Doküman kategorileri
-- **Duyurular**: Sistem duyuruları
-- **Raporlar**: Raporlama modülü
-- **Ayarlar**: Sistem ayarları
+!!! warning "Seçili yıl"
+    Kayıt oluşturma butonları çoğu ekranda yalnızca aktif yıl seçiliyken görünür. Bir butonu göremiyorsanız önce
+    üst çubuktaki yılı kontrol edin.
 
-!!! info "Rol Bazlı Menü"
-    Gördüğünüz menü öğeleri, sahip olduğunuz role göre değişir. Bazı menüler sadece belirli roller için görünür.
+## Dil seçimi
 
-## Üst Çubuk (Topnav)
+Sayfanın en altındaki **EN** / **TR** bağlantısıyla arayüz dilini değiştirebilirsiniz.
 
-Üst çubuk aşağıdaki öğeleri içerir:
+## Anasayfa {#anasayfa}
 
-### Menü Açma/Kapama
-Sol taraftaki hamburger ikonu (≡) ile sol menüyü açıp kapatabilirsiniz.
+Giriş yaptıktan sonra açılan **Anasayfa** şu bölümlerden oluşur:
 
-### Kullanıcı Menüsü
-Sağ üst köşede e-posta adresiniz görünür. Tıkladığınızda:
+| Bölüm | İçerik |
+|-------|--------|
+| Üst bölüm | Karşılama, rol rozetleri ve hızlı erişim butonları: **Geri Bildirim Oluştur**, **Doküman Talebi** (doküman talebi oluşturabilen kullanıcılara), **Kılavuz** |
+| **Bekleyen İşlerim** | Sizi bekleyen kayıtların sayıları (ör. onay bekleyen DİF, incelemedeki geri bildirim, onay bekleyen doküman talebi). Yalnızca bekleyen iş varsa görünür. |
+| **Modüller** | Modüllere ait özet sayılar ve **Modüle git** bağlantıları |
+| **Grafikler** | Geri bildirim ve DİF grafikleri. Sorumlu olduğunuz birim varsa **Üniversite geneli** / **Birimlerim** seçimi de görünür. |
+| **Duyurular** | Genel duyurular (duyuru varsa görünür) |
+| **Biriminize Özel Duyurular** | Biriminize yapılan duyurular (duyuru varsa görünür) |
+| **En Çok İndirilen Dokümanlar** | En çok indirilen dokümanlar (kayıt varsa görünür) |
+| **Son Aktivitelerim** | Sistemde son yaptığınız işlemler |
+| Takvim | Herkese açık takvimlerdeki etkinlikler |
 
-- **Profil**: Profil bilgilerinizi görüntüleyin
-- **Şifre Değiştir**: Şifrenizi değiştirin
-- **Çıkış**: Sistemden çıkış yapın
-
-### Bildirimler
-Zil ikonu ile sistem bildirimlerinizi görebilirsiniz. Yeni bildiriminiz varsa ikon üzerinde sayı görünür.
-
-### Yıl Seçici
-Aktif yılı görüntüler ve değiştirmenize olanak tanır. Yıl değiştirdiğinizde tüm veriler seçilen yıla göre filtrelenir.
-
-!!! warning "Yıl Seçimi"
-    Doğru yılın seçili olduğundan emin olun. Yanlış yıl seçimi, hatalı veri girişine neden olabilir.
-
-## İçerik Alanı
-
-Ana çalışma alanı, seçilen modüle göre değişir. Genellikle şu öğeleri içerir:
-
-### Sayfa Başlığı
-Sayfanın adı ve breadcrumb navigasyonu
-
-### Araç Çubuğu
-- **Yeni Ekle** butonu
-- **Dışa Aktar** seçenekleri (Excel, PDF)
-- **Filtreler** ve arama
-
-### Veri Tablosu
-Kayıtların listelendiği tablo. Tabloda:
-
-- Sıralama yapabilirsiniz
-- Sayfalama ile gezinebilirsiniz
-- Satıra tıklayarak detay sayfasına gidebilirsiniz
-
-### Detay Panelleri
-Kayıt detay sayfalarında ilişkili veriler paneller halinde gösterilir.
-
-## Kısayollar
-
-| Kısayol | Açıklama |
-|---------|----------|
-| Sol menü tıklama | İlgili modüle gitme |
-| Tablo satırı tıklama | Detay sayfasına gitme |
-| Geri butonu | Önceki sayfaya dönme |
-
-## Responsive Tasarım
-
-Sistem, farklı ekran boyutlarına uyum sağlar:
-
-- **Masaüstü**: Tam özellikli görünüm
-- **Tablet**: Daraltılmış menü
-- **Mobil**: Hamburger menü ile erişim
-
-!!! tip "Tavsiye"
-    En iyi deneyim için masaüstü veya tablet kullanmanız önerilir.
+Giriş yapmadan açılan **Anasayfa**da **Geri Bildirim Oluştur**, **Geri Bildirim Durumu Sorgula** ve **Giriş Yap**
+butonları bulunur.

@@ -1,108 +1,139 @@
 # Veri ve Göstergeler
 
-Bu modül, kurumsal verilerin ve performans göstergelerinin yönetimini sağlar.
+Kurumsal verilerin ve kurumsal göstergelerin tanımlandığı; birim veri, hedef ve üst hedef girişlerinin yapıldığı ve
+onaylandığı modüldür. Bu sayfa sol menüdeki **Veri ve Göstergeler**, **Veri ve Hedef Girişi** ve **Veri ve Hedef Onayı**
+menülerini kapsar.
 
-!!! info "Erişim"
-    Bu modüle **Admin**, **Üniversite Yönetimi** ve **Veri ve Göstergeler Admin** rolleri erişebilir.
+## Bu sayfayı kimler kullanır
 
-## Alt Menüler
+| Rol | Yapacağı işler |
+|-----|----------------|
+| Admin, Veri ve Göstergeler Admini | [Dönem tanımlama](#1-donem-tanimlama), [Gösterge etiketi oluşturma](#2-gosterge-etiketi-olusturma), [Kurumsal veri oluşturma](#3-kurumsal-veri-olusturma), [Kurumsal gösterge oluşturma](#4-kurumsal-gosterge-olusturma) |
+| Veri Giriş Yetkilisi | [Kurumsal veri girişi](#5-kurumsal-veri-girisi), [Hedef girişi](#6-hedef-girisi) |
+| Süreç Yöneticisi | [Veri ve hedef onayı](#7-veri-ve-hedef-onayi) |
+| Etiket Sorumlusu | [Üst hedef girişi](#8-ust-hedef-girisi) |
+| Admin | [Kurumsal gösterge değerlerinin girilmesi](#9-kurumsal-gosterge-degerlerinin-girilmesi) |
 
-### Gösterge Etiketleri
+İşlemler aşağıdaki sırayla yapılır.
 
-Kurumsal göstergelerin kategorize edilmesi için kullanılan etiketlerin yönetimi.
+## 1. Dönem tanımlama {#1-donem-tanimlama}
 
-**İşlevler:**
+!!! note "Rol"
+    Admin, Veri ve Göstergeler Admini
 
-- Yeni etiket oluşturma
-- Etiket düzenleme ve silme
-- Etiket sorumlusu atama
+1. **Ayarlar** > **Dönemler** menüsüne girin.
+2. **Yeni Dönem Oluştur** butonuna tıklayın, **Dönem** alanını doldurun ve **Oluştur** butonuna tıklayın.
+3. Oluşan dönemin sayfasında **Dönem Tarihlerini Oluştur** butonuna tıklayın.
+4. **Başlangıç Tarihi** ve **Bitiş Tarihi** alanlarını doldurun ve **Oluştur** butonuna tıklayın.
 
-**Etiket Oluşturma:**
+## 2. Gösterge etiketi oluşturma {#2-gosterge-etiketi-olusturma}
 
-1. **Veri ve Göstergeler > Gösterge Etiketleri** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Etiket adını girin
-4. Sorumlu kullanıcıyı seçin (opsiyonel)
-5. **Kaydet** butonuna tıklayın
+!!! note "Rol"
+    Admin, Veri ve Göstergeler Admini
 
----
+1. **Veri ve Göstergeler** > **Gösterge Etiketleri** menüsüne girin.
+2. **Yeni Gösterge Etiketi Oluştur** butonuna tıklayın.
+3. **Gösterge Etiketi** alanını doldurun.
+4. **Kurumsal Veri Dönemleri**, **Hedef Dönemleri** ve **Üst Hedef Dönemleri** alanlarından ilgili dönemleri seçin.
+5. Üst hedef girecek kişileri **Etiket Sorumluları** alanından seçin.
+6. **Yıllar** alanını kontrol edin ve **Oluştur** butonuna tıklayın.
 
-### Veri Kütüphanesi (Kurumsal Veriler)
+Alt etiket eklemek için etiketin sayfasında **Yeni Alt Gösterge Etiketi Oluştur** butonuna tıklayın.
 
-Kurumsal düzeyde takip edilen verilerin tanımlandığı bölüm.
+## 3. Kurumsal veri oluşturma {#3-kurumsal-veri-olusturma}
 
-**İşlevler:**
+!!! note "Rol"
+    Admin, Veri ve Göstergeler Admini
 
-- Veri tanımı oluşturma
-- Dönemsel veri girişi beklentisi belirleme
-- Birim bazlı veri atama
+1. **Veri ve Göstergeler** > **Veri Kütüphanesi** menüsüne girin.
+2. **Yeni Kurumsal Veri Oluştur** butonuna tıklayın.
+3. **Kurumsal Veri**, **Etiketler**, **Açıklama**, **Ölçü Birimi**, **Veri Kaynağı** ve **Birimler** alanlarını
+   doldurun.
+4. Gerekiyorsa **Kanıt Zorunlu**, **Kümülatif** ve **Negatif Değer Girilebilir** seçeneklerini işaretleyin;
+   **Örnek Kanıt Dosyası** yükleyin.
+5. **Oluştur** butonuna tıklayın.
 
-**Veri Tanımı Oluşturma:**
+## 4. Kurumsal gösterge oluşturma {#4-kurumsal-gosterge-olusturma}
 
-1. **Veri ve Göstergeler > Veri Kütüphanesi** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Veri adını ve açıklamasını girin
-4. Veri türünü seçin (sayı, metin, tarih vb.)
-5. İlgili birimleri seçin
-6. **Kaydet** butonuna tıklayın
+!!! note "Rol"
+    Admin, Veri ve Göstergeler Admini
 
----
+1. **Veri ve Göstergeler** > **Kurumsal Göstergeler** menüsüne girin.
+2. **Yeni Kurumsal Gösterge Oluştur** butonuna tıklayın.
+3. **Kod**, **Kurumsal Gösterge** ve **Etiketler** alanlarını doldurun.
+4. **Kurumsal Veri Pay**, **Kurumsal Veri Payda** ve **Gösterge Yönü** alanlarını seçin.
+5. Hedef girecek birimleri **Hedef Girecek Birimler** alanından seçin.
+6. **Oluştur** butonuna tıklayın.
 
-### Kurumsal Göstergeler
+## 5. Kurumsal veri girişi {#5-kurumsal-veri-girisi}
 
-Performans ölçümü için kullanılan göstergelerin tanımı.
+!!! note "Rol"
+    Veri Giriş Yetkilisi
 
-**İşlevler:**
+1. **Veri ve Hedef Girişi** > **Kurumsal Veri Girişi** menüsüne girin.
+2. Sayfanın üstündeki listeden biriminizi seçin.
+3. Veri girilecek satırda **Veri Girişi Yap** butonuna tıklayın.
+4. **Değer Var/Yok?** alanını seçin, **Kurumsal Veri Değeri** alanını doldurun ve gerekiyorsa **Kanıt** yükleyin.
+5. **Kaydet** butonuna tıklayın.
+6. Tüm veriler girildikten sonra **Onaya Gönder** butonuna tıklayın.
+7. **Değerlendirmeler** alanını doldurun ve **Onaya Gönder** butonuna tıklayın.
 
-- Gösterge tanımı oluşturma
-- Hedef değer belirleme
-- Gösterge formülü tanımlama
+Talep reddedilirse aynı sayfada **Yeniden Onaya Gönder** butonu görünür. Verileri düzelttikten sonra bu butonla talebi
+yeniden gönderin.
 
-**Gösterge Tanımı:**
+## 6. Hedef girişi {#6-hedef-girisi}
 
-1. **Veri ve Göstergeler > Kurumsal Göstergeler** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Gösterge adı ve açıklamasını girin
-4. İlgili etiketi seçin
-5. Hesaplama yöntemini belirleyin
-6. **Kaydet** butonuna tıklayın
+!!! note "Rol"
+    Veri Giriş Yetkilisi
 
----
+1. **Veri ve Hedef Girişi** > **Hedef Girişi** menüsüne girin.
+2. Sayfanın üstündeki listeden biriminizi seçin.
+3. Hedef girilecek satırda **Hedef Girişi Yap** butonuna tıklayın.
+4. **Hedef Var/Yok?** alanını seçin, **Gösterge Hedefi** alanını doldurun ve **Kaydet** butonuna tıklayın.
+5. Tüm hedefler girildikten sonra **Onaya Gönder** butonuna tıklayın, **Değerlendirmeler** alanını doldurun ve
+   **Onaya Gönder** butonuna tıklayın.
 
-### Veri ve Hedef Yönetimi
+## 7. Veri ve hedef onayı {#7-veri-ve-hedef-onayi}
 
-Veri girişlerinin ve hedeflerin toplu yönetimi.
+!!! note "Rol"
+    Süreç Yöneticisi
 
-**İşlevler:**
+1. **Veri ve Hedef Onayı** > **Veri Onayı Talepleri** (hedefler için **Hedef Onayı Talepleri**) menüsüne girin.
+2. Sayfanın üstündeki listeden birimi seçin.
+3. **Verileri Onayla/Reddet** (hedefler için **Hedefleri Onayla/Reddet**) butonuna tıklayın.
+4. **Durum** alanından **Onayla** veya **Reddet** seçin.
+5. **Değerlendirme** alanını doldurun ve **Kaydet** butonuna tıklayın.
 
-- Dönem bazlı veri girişi takibi
-- Hedef tanımlama
-- Onay süreçleri yönetimi
+Kararı değiştirmek için **Onay Durumunu Değiştir** butonunu kullanın.
 
----
+## 8. Üst hedef girişi {#8-ust-hedef-girisi}
 
-## Veri Girişi Süreci
+!!! note "Rol"
+    Etiket Sorumlusu
 
-Veri girişi süreci aşağıdaki adımlardan oluşur:
+1. **Veri ve Hedef Girişi** > **Üst Hedef Girişi** menüsüne girin.
+2. Sayfanın üstündeki listeden gösterge etiketini seçin.
+3. İlgili satırda **Üst Hedef Girişi Yap** butonuna tıklayın.
+4. **Üst Hedef Var/Yok?** alanını seçin, **Gösterge Üst Hedefi** alanını doldurun ve **Kaydet** butonuna tıklayın.
 
-```
-1. Admin veri tanımı oluşturur
-2. Kalite Temsilcisi veri girişi yapar
-3. Süreç Sorumlusu veriyi onaylar
-4. Veri sisteme kaydedilir
-```
+## 9. Kurumsal gösterge değerlerinin girilmesi {#9-kurumsal-gosterge-degerlerinin-girilmesi}
 
-!!! warning "Dönem Kontrolü"
-    Veri girişleri dönemsel olarak yapılır. Aktif dönem dışında veri girişi yapılamaz.
+Nihai kurumsal gösterge değerleri sistem tarafından hesaplanmaz; admin tarafından elle girilir.
 
----
+!!! note "Rol"
+    Admin
 
-## Raporlama
+1. **Veri ve Göstergeler** > **Veri ve Hedef Yönetimi** menüsüne girin.
+2. **Kurumsal Gösterge Değerleri** kartında **Verileri Göster** butonuna tıklayın.
+3. **Kurumsal Gösterge Değeri Oluştur** butonuna tıklayın.
+4. **Değer Var/Yok?**, **Kurumsal Gösterge**, **Kurumsal Gösterge Değeri** ve **Yıl** alanlarını doldurun, gerekiyorsa
+   **Kanıt** yükleyin.
+5. **Oluştur** butonuna tıklayın.
 
-Bu modülden elde edilen veriler çeşitli raporlarda kullanılır:
+Girilen kurumsal veri değerleri, hedefler ve üst hedefler aynı ekrandaki **Kurumsal Veri Değerleri**,
+**Gösterge Hedefleri** ve **Gösterge Üst Hedefleri** kartlarının **Verileri Göster** butonlarıyla görüntülenir.
 
-- Kurumsal gösterge raporu
-- Birim bazlı veri raporu
-- Dönemsel karşılaştırma raporu
+## İlgili raporlar
 
-Raporlara **Raporlar** menüsünden erişebilirsiniz.
+Girilen değerlerin raporları [Raporlar](raporlar.md) sayfasında anlatılır. Bu modülle ilgili raporlar: **Kurumsal Veriler**,
+**Kurumsal Göstergeler**, **Kurumsal Göstergeler - Birim Performansları** ve **Nihai Kurumsal Gösterge Değerleri**.

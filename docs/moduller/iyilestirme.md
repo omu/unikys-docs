@@ -1,137 +1,165 @@
 # İyileştirme Yönetimi
 
-Bu modül, kurumsal iyileştirme faaliyetlerinin planlanması ve takibini sağlar. DİF (Doküman İyileştirme Formu), düzeltici eylemler ve uygunsuzluk yönetimi bu modül kapsamındadır.
+Bu modülde uygunsuzluklar tanımlanır, düzeltmeler ve DİF (Düzeltici İyileştirici Faaliyet) kayıtları izlenir, yönetim
+görevleri verilir.
 
-!!! info "Erişim"
-    Bu modüle **Admin**, **Üniversite Yönetimi**, **Süreç Rolleri** ve **Etiket Sorumlusu** erişebilir.
+## Bu sayfayı kimler kullanır
 
-## Alt Menüler
+| Rol | Yapacağı işler |
+|-----|----------------|
+| Admin | [Uygunsuzluklar](#uygunsuzluklar), [Yönetim Görevleri](#yonetim-gorevleri), tüm listeleri görüntüleme |
+| Üniversite Yöneticisi | [Yönetim Görevleri](#yonetim-gorevleri), tüm listeleri görüntüleme |
+| Etiket Sorumlusu | [Yönetim Görevleri](#yonetim-gorevleri) |
+| Süreç Yöneticisi | [Düzeltme Yapma](#duzeltme), [DİF Oluşturma](#dif-olusturma), [DİF Onayı](#dif-onayi), [Faaliyet Adımlarını Tamamlama](#dif-tamamlama), [DİF Değerlendirme](#dif-degerlendirme) |
+| Kalite Sorumlusu | [Düzeltme Yapma](#duzeltme), [DİF Oluşturma](#dif-olusturma), [Faaliyet Adımlarını Tamamlama](#dif-tamamlama) |
+| Süreç Koordinatörü | [DİF Onayı](#dif-onayi), [DİF Değerlendirme](#dif-degerlendirme) |
 
-### Uygunsuzluklar
-
-Tespit edilen uygunsuzlukların kaydedildiği ve takip edildiği bölüm.
-
-!!! note "Erişim"
-    Sadece **Admin** ve **Üniversite Yönetimi** tarafından yönetilebilir.
-
-**Uygunsuzluk Kaydı:**
-
-1. **İyileştirme Yönetimi > Uygunsuzluklar** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Uygunsuzluk başlığını girin
-4. Detaylı açıklama yapın
-5. İlgili birimi seçin
-6. Kaynak türünü belirleyin (denetim, şikayet, vb.)
-7. **Kaydet** butonuna tıklayın
+**İyileştirme Yönetimi** menüsünde şu alt menüler bulunur: **Uygunsuzluklar**, **Düzeltmeler**, **Düzeltmelerim**,
+**DİF**, **Yönetim Görevleri**. Her rol yalnızca kendisine açık olanları görür.
 
 ---
 
-### Düzeltici Eylemler
+## Uygunsuzluklar {#uygunsuzluklar}
 
-Uygunsuzlukların giderilmesi için planlanan eylemlerin yönetildiği bölüm.
+!!! note "Rol"
+    Admin
 
-**Düzeltici Eylem Oluşturma:**
+1. **İyileştirme Yönetimi** > **Uygunsuzluklar** menüsüne girin.
+2. **Yeni Uygunsuzluk Oluştur** butonuna tıklayın.
+3. **Uygunsuzluk** ve **Uygunsuzluk Türü** alanlarını doldurun.
+4. **Oluştur** butonuna tıklayın.
 
-1. Uygunsuzluk detay sayfasından veya doğrudan menüden erişin
-2. **Yeni Ekle** butonuna tıklayın
-3. Eylem planını tanımlayın
-4. Sorumlu kişiyi atayın
-5. Hedef tarihi belirleyin
-6. **Kaydet** butonuna tıklayın
+Tanımlanan uygunsuzluklar düzeltme formundaki **Uygunsuzluk** listesinde çıkar.
 
-**Eylem Durumları:**
+## Düzeltme Yapma {#duzeltme}
 
-| Durum | Açıklama |
-|-------|----------|
-| Açık | Henüz başlanmamış |
-| Devam Ediyor | Üzerinde çalışılıyor |
-| Tamamlandı | Eylem tamamlandı |
-| Onay Bekliyor | Onay sürecinde |
-| Kapatıldı | Süreç tamamlandı |
+!!! note "Rol"
+    Süreç Yöneticisi, Kalite Sorumlusu
 
----
+**Düzeltme Yap** butonu şu ekranlarda bulunur:
 
-### DİF (Doküman İyileştirme Formu)
+- **Geri Bildirimler**: geri bildirimin detay sayfası ([Geri Bildirimler](geri-bildirimler.md))
+- **Süreç Kartları**: süreç kartındaki faaliyet ([Süreç Yönetimi](surec-yonetimi.md))
+- **İç Tetkik Raporları**: iç tetkik bulgusunun sayfası ([İç Tetkik](ic-tetkik.md))
 
-Doküman ve süreç iyileştirme taleplerinin yönetildiği bölüm.
+Adımlar:
 
-**DİF Oluşturma:**
+1. İlgili ekranda **Düzeltme Yap** butonuna tıklayın.
+2. **Uygunsuzluk** alanından uygunsuzluğu seçin. Listede yoksa **Diğer** seçili bırakıp **Uygunsuzluğu Tanımlayın**
+   alanını doldurun.
+3. **Birim** ve **Açıklama / Yapılan İşlem** alanlarını doldurun. Varsa **Kanıtlar (varsa)** alanından dosya yükleyin.
+4. **Oluştur** butonuna tıklayın.
 
-1. **İyileştirme Yönetimi > DİF** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. İyileştirme türünü seçin
-4. Mevcut durumu açıklayın
-5. Önerilen iyileştirmeyi tanımlayın
-6. İlgili dokümanı seçin (varsa)
-7. **Kaydet** butonuna tıklayın
-
-**DİF Türleri:**
-
-- Doküman değişikliği
-- Süreç iyileştirme
-- Yeni doküman talebi
-- Doküman iptali
+Biriminize ve süreçlerinize ait düzeltmeler **İyileştirme Yönetimi** > **Düzeltmelerim** menüsünde listelenir. Admin ve Üniversite Yöneticisi
+tüm düzeltmeleri **İyileştirme Yönetimi** > **Düzeltmeler** menüsünde görür.
 
 ---
 
-### Yönetim Görevleri
+## DİF Oluşturma {#dif-olusturma}
 
-Yönetim tarafından atanan görevlerin takip edildiği bölüm.
+!!! note "Rol"
+    Süreç Yöneticisi, Kalite Sorumlusu
 
-**Görev Oluşturma:**
+**DİF Oluştur** butonu şu ekranlarda bulunur:
 
-1. **İyileştirme Yönetimi > Yönetim Görevleri** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Görev tanımını girin
-4. Sorumlu kişi/birimi seçin
-5. Öncelik ve hedef tarihi belirleyin
-6. **Kaydet** butonuna tıklayın
+| Ekran | Sayfa |
+|---|---|
+| Geri bildirimin detay sayfası | [Geri Bildirimler](geri-bildirimler.md) |
+| **Risklerim** listesi ve risk detay sayfası | [Risk ve Fırsat Yönetimi](risk-ve-firsat-yonetimi.md) |
+| Süreç kartındaki faaliyet | [Süreç Yönetimi](surec-yonetimi.md) |
+| **Yıllık Eylem Planı** | [Eylem Planı](eylem-plani.md) |
+| Yönetim görevinin adımı | [Yönetim Görevleri](#yonetim-gorevleri) |
+| İç tetkik bulgusunun sayfası | [İç Tetkik](ic-tetkik.md) |
+
+Adımlar:
+
+1. İlgili ekranda **DİF Oluştur** butonuna tıklayın.
+2. Şu alanları doldurun:
+   - **Talep Eden Birim**, **DİF Türü**
+   - **Uygunsuzluk Tanımı** veya **İyileştirme Tanımı**
+   - **Uygunsuzluğun Nedeni (Kök Neden Analizi) ve Yayılma Potansiyeli** (**Düzeltici Faaliyet** seçildiğinde)
+   - **Uygulanması Planlanan Faaliyet**
+3. **Faaliyet Adımı Ekle** butonuyla her faaliyet adımını ekleyin. Her adımda şunları doldurun: **Faaliyet Adımı**,
+   **Sorumlu Kişi**, **Tamamlanma Tarihi**, **Etki Yüzdesi (%)**, **Bütçe**.
+4. **Faaliyetin Üst Sorumlusu** ve **İlişkili YÖKAK Ölçütü** alanlarını doldurun. Varsa **Dosyalar** alanından dosya
+   yükleyin.
+5. **Oluştur** butonuna tıklayın.
+
+DİF kayıtları **İyileştirme Yönetimi** > **DİF** menüsünde listelenir.
+
+!!! note "Form uyarısı"
+    Faaliyet adımlarının **Etki Yüzdesi (%)** değerlerinin toplamı 100 olmalıdır. Aksi halde form kaydedilmez.
+
+## DİF Onayı {#dif-onayi}
+
+!!! note "Rol"
+    Süreç Yöneticisi, Süreç Koordinatörü
+
+1. **İyileştirme Yönetimi** > **DİF** menüsüne girin.
+2. Onayınızı bekleyen DİF'i **Göster** ile açın.
+3. **DİF'i Onayla/Reddet** butonuna tıklayın.
+4. **DİF'i Onaylıyor Musunuz?** alanında **Evet** veya **Hayır** seçin ve **Değerlendirme** alanını doldurun.
+5. **Oluştur** butonuna tıklayın.
+
+DİF sırasıyla talep eden birimin Süreç Yöneticisi, ilgili sürecin Süreç Yöneticisi ve Süreç Koordinatörü tarafından onaylanır.
+
+## Faaliyet Adımlarını Tamamlama {#dif-tamamlama}
+
+!!! note "Rol"
+    Süreç Yöneticisi, Kalite Sorumlusu (DİF'i talep eden birim)
+
+DİF onaylanıp başladıktan sonra:
+
+1. **İyileştirme Yönetimi** > **DİF** menüsünde DİF'i **Göster** ile açın.
+2. Tamamlanan faaliyet adımının satırındaki **Tamamla** butonuna tıklayın.
+3. **Faaliyet Adımı Tamamlandı Mı?**, **Açıklama** ve **Kanıt** alanlarını doldurun.
+4. **Oluştur** butonuna tıklayın. Her faaliyet adımı için tekrarlayın.
+
+## DİF Değerlendirme {#dif-degerlendirme}
+
+!!! note "Rol"
+    Süreç Yöneticisi, Süreç Koordinatörü
+
+Bütün faaliyet adımları tamamlandıktan sonra:
+
+1. **İyileştirme Yönetimi** > **DİF** menüsünde DİF'i **Göster** ile açın.
+2. **Değerlendir** butonuna tıklayın.
+3. **DİF etkili mi?** alanında **Etkili** veya **Etkili Değil** seçin ve **Açıklama** alanını doldurun.
+4. **Oluştur** butonuna tıklayın.
 
 ---
 
-### Benim Düzeltici Eylemlerim
+## Yönetim Görevleri {#yonetim-gorevleri}
 
-Kullanıcının sorumlu olduğu eylemlerin listelendiği bölüm.
+### Yönetim Görevi Oluşturma
 
-!!! note "Erişim"
-    **Süreç Rolleri** tarafından görülebilir.
+!!! note "Rol"
+    Admin, Üniversite Yöneticisi, Etiket Sorumlusu
 
----
+Admin ve Üniversite Yöneticisi için:
 
-## İyileştirme Süreci
+1. **İyileştirme Yönetimi** > **Yönetim Görevleri** menüsüne girin.
+2. **Yönetim Görevi Oluştur** butonuna tıklayın.
 
-```
-1. Tespit
-   - Denetim bulgusu
-   - Geri bildirim
-   - Öz değerlendirme
-   ↓
-2. Analiz
-   - Kök neden analizi
-   - Etki değerlendirmesi
-   ↓
-3. Planlama
-   - Düzeltici eylem tanımlama
-   - Kaynak ve süre belirleme
-   ↓
-4. Uygulama
-   - Eylemlerin yürütülmesi
-   - İlerleme takibi
-   ↓
-5. Doğrulama
-   - Etkinlik kontrolü
-   - Kapatma
-```
+Etiket Sorumlusu için (Admin ve Üniversite Yöneticisi de bu yolu kullanabilir):
 
----
+1. **Raporlar** menüsünde **Kurumsal Göstergeler** raporunun satırındaki **Göster** butonuna tıklayın.
+2. İlgili kurumsal göstergenin satırında **Yönetim Görevi Oluştur** butonuna tıklayın.
 
-## Kök Neden Analizi
+Açılan formda:
 
-Etkili iyileştirme için kök neden analizi yapılmalıdır:
+1. **Yönetim Görevi Adı**, **Yönetim Görevi Tanımı** ve **Süreç** alanlarını doldurun. Görev bir kurumsal göstergeden
+   açıldıysa **Kurumsal Gösterge** alanı dolu gelir.
+2. **Görev Adımı Ekle** butonuyla her görev adımını ekleyin. Her adımda şunları doldurun: **Tanım**, **Ağırlık**,
+   **Sorumlu Kişi**, **Sorumlu Birimler**, **Başlangıç Tarihi**, **Bitiş Tarihi**.
+3. **Oluştur** butonuna tıklayın.
 
-- **5 Neden Tekniği**: "Neden?" sorusunu tekrarlayarak köke ulaşma
-- **Balık Kılçığı Diyagramı**: Sebep-sonuç analizi
-- **Pareto Analizi**: En önemli sebeplere odaklanma
+### Yönetim Görevinden DİF Oluşturma
 
-!!! tip "Etkili İyileştirme"
-    Belirtilere değil, kök nedenlere odaklanın. Geçici çözümler yerine kalıcı iyileştirmeler planlayın.
+!!! note "Rol"
+    Süreç Yöneticisi, Kalite Sorumlusu (görev adımının sorumlu birimi)
+
+1. **İyileştirme Yönetimi** > **Yönetim Görevleri** menüsüne girin.
+2. Biriminize verilen görevi **Göster** ile açın.
+3. İlgili görev adımının satırındaki **DİF Oluştur** butonuna tıklayın.
+4. DİF formunu [DİF Oluşturma](#dif-olusturma) bölümündeki gibi doldurun.

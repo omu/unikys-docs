@@ -2,12 +2,14 @@ site_name: Ünikys Kullanım Kılavuzu
 site_url: https://omu.github.io/unikys-docs/
 site_description: Ünikys Kalite Yönetim Sistemi Kullanım Kılavuzu
 site_author: Ondokuz Mayıs Üniversitesi
+copyright: "Ondokuz Mayıs Üniversitesi tarafından geliştirilmiştir. © 2026 Ondokuz Mayıs Üniversitesi. Tüm hakları saklıdır."
 
 repo_name: omu/unikys-docs
 repo_url: https://github.com/omu/unikys-docs
 
 theme:
   name: material
+  custom_dir: overrides
   language: tr
   palette:
     - scheme: default
@@ -42,19 +44,22 @@ nav:
     - Ünikys Hakkında: giris/hakkinda.md
     - Sisteme Giriş: giris/sisteme-giris.md
     - Arayüz Tanıtımı: giris/arayuz.md
+    - Rolüme Göre Kılavuz: rolume-gore.md
   - Modüller:
     - Veri ve Göstergeler: moduller/veri-gostergeler.md
     - Süreç Yönetimi: moduller/surec-yonetimi.md
-    - Risk Yönetimi: moduller/risk-yonetimi.md
+    - Risk ve Fırsat Yönetimi: moduller/risk-ve-firsat-yonetimi.md
     - Geri Bildirimler: moduller/geri-bildirimler.md
     - İç Değerlendirme: moduller/ic-degerlendirme.md
-    - İç Denetim: moduller/ic-denetim.md
+    - İç Tetkik: moduller/ic-tetkik.md
     - İyileştirme Yönetimi: moduller/iyilestirme.md
     - Eylem Planı: moduller/eylem-plani.md
     - İç Kontrol: moduller/ic-kontrol.md
-    - Belge Yönetimi: moduller/belge-yonetimi.md
+    - Toplantı Karar Yönetimi: moduller/toplanti-karar-yonetimi.md
+    - Doküman Yönetimi: moduller/dokuman-yonetimi.md
     - Duyurular: moduller/duyurular.md
     - Raporlar: moduller/raporlar.md
+    - Birim: moduller/birim.md
     - Ayarlar: moduller/ayarlar.md
   - Roller ve Yetkiler: roller.md
   - Sık Sorulan Sorular: sss.md
@@ -62,6 +67,15 @@ nav:
 plugins:
   - search:
       lang: tr
+  - redirects:
+      redirect_maps:
+        moduller/ic-denetim.md: moduller/ic-tetkik.md
+        moduller/belge-yonetimi.md: moduller/dokuman-yonetimi.md
+        moduller/risk-yonetimi.md: moduller/risk-ve-firsat-yonetimi.md
+
+validation:
+  links:
+    anchors: warn
 
 markdown_extensions:
   - admonition

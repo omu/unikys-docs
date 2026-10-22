@@ -1,124 +1,91 @@
 # Eylem Planı
 
-Bu modül, kurumsal eylem planlarının oluşturulması ve takibini sağlar.
+Bu modülde eylem alanları ve eylem planları tanımlanır. Birimler kendilerine verilen uygulama adımları için
+**Yıllık Eylem Planı** üzerinden DİF açar.
 
-!!! info "Erişim"
-    Bu modüle herhangi bir role sahip tüm kullanıcılar erişebilir. Ancak **Eylem Planları** ve **Eylem Alanları** alt menüleri sadece Admin/Üniversite Yönetimi tarafından yönetilebilir.
+## Bu sayfayı kimler kullanır
 
-## Alt Menüler
+| Rol | Yapacağı işler |
+|-----|----------------|
+| Admin | [Eylem Alanları](#eylem-alanlari), [Eylem Planı Oluşturma](#eylem-plani-olusturma), [Eylem ve Uygulama Adımları](#eylem-ve-uygulama-adimlari) |
+| Üniversite Yöneticisi | Admin ekranlarını görüntüleme |
+| Süreç Yöneticisi, Kalite Sorumlusu | [Yıllık Eylem Planından DİF Oluşturma](#yillik-eylem-plani) |
+| Rolü olan tüm kullanıcılar | **Yıllık Eylem Planı** ekranını görüntüleme |
 
-### Eylem Planları
+İşlemler aşağıdaki sırayla yapılır.
 
-Kurumsal düzeyde eylem planlarının tanımlandığı bölüm.
-
-!!! note "Erişim"
-    Sadece **Admin** ve **Üniversite Yönetimi** tarafından yönetilebilir.
-
-**Eylem Planı Oluşturma:**
-
-1. **Eylem Planı > Eylem Planları** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Plan adını ve yılını girin
-4. Açıklama ekleyin
-5. **Kaydet** butonuna tıklayın
+!!! info "Seçili yıl"
+    Eylem alanı, eylem planı, eylem ve uygulama adımı oluşturma butonları yalnızca üst çubuktaki **Seçili Yıl** aktif
+    yıl olduğunda görünür. Eylem planı aktif yıla oluşturulur.
 
 ---
 
-### Eylem Alanları
+## 1. Eylem Alanları {#eylem-alanlari}
 
-Eylem planlarının kategorize edildiği alanların tanımı.
+!!! note "Rol"
+    Admin
 
-!!! note "Erişim"
-    Sadece **Admin** ve **Üniversite Yönetimi** tarafından yönetilebilir.
+1. **Eylem Planı** > **Eylem Alanları** menüsüne girin.
+2. **Yeni Eylem Alanı Oluştur** butonuna tıklayın.
+3. **Eylem Alanı** ve **Kodu** alanlarını doldurun.
+4. **Oluştur** butonuna tıklayın.
 
-**Eylem Alanı Oluşturma:**
+!!! tip "Önceki yıldan kopyalama"
+    **Eksik Eylem Alanlarını Önceki Yıldan Kopyala** butonuna tıklayarak önceki yılın eylem alanlarını aktarabilirsiniz.
 
-1. **Eylem Planı > Eylem Alanları** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Alan adını girin
-4. İlgili eylem planını seçin
-5. **Kaydet** butonuna tıklayın
+## 2. Eylem Planı Oluşturma {#eylem-plani-olusturma}
 
----
+!!! note "Rol"
+    Admin
 
-### Yıllık Eylem Planları
+1. Üst çubuktaki **Seçili Yıl** alanında aktif yılın seçili olduğunu kontrol edin.
+2. **Eylem Planı** > **Eylem Planları** menüsüne girin.
+3. **Yeni Eylem Planı Oluştur** butonuna tıklayın.
+4. **Eylem Planı** ve **Kısaltması** alanlarını doldurun.
+5. **Oluştur** butonuna tıklayın.
 
-Yıl bazında eylem planlarının görüntülendiği ve takip edildiği bölüm.
+Sistemde birden fazla eylem planı oluşturulabilir.
 
-**İşlevler:**
+## 3. Eylem ve Uygulama Adımları {#eylem-ve-uygulama-adimlari}
 
-- Yıllık eylem planını görüntüleme
-- Eylem detaylarına erişim
-- İlerleme takibi
-- Raporlama
+!!! note "Rol"
+    Admin
 
----
+### Eylem
 
-## Eylem Planı Yapısı
+1. **Eylem Planı** > **Eylem Planları** menüsünde ilgili eylem planının satırında **Göster** butonuna tıklayın.
+2. **Yeni Eylem Oluştur** butonuna tıklayın.
+3. Şu alanları doldurun: **Eylem**, **Kod**, **Eylem Alanı**, **Süreç**, **Gösterge Etiketi**, **Kurumsal Göstergeler**.
+4. **Oluştur** butonuna tıklayın.
 
-```
-Eylem Planı (2024)
-├── Eylem Alanı 1: Eğitim Kalitesi
-│   ├── Eylem 1.1: Müfredat güncelleme
-│   └── Eylem 1.2: Öğretim yöntemleri geliştirme
-├── Eylem Alanı 2: Araştırma
-│   └── Eylem 2.1: Proje sayısını artırma
-└── Eylem Alanı 3: Toplumsal Katkı
-    └── Eylem 3.1: Toplum hizmeti projeleri
-```
+### Uygulama Adımı
 
----
+1. Eylem planının sayfasında ilgili eylemin satırında **Göster** butonuna tıklayın.
+2. **Yeni Uygulama Adımı Oluştur** butonuna tıklayın.
+3. Şu alanları doldurun:
+   - **Uygulama Adımı**, **Sıra**
+   - **Süreç Faaliyetleri** (eylemin sürecinde faaliyet varsa görünür)
+   - **Ağırlık**
+   - **Başlangıç Tarihi**, **Bitiş Tarihi**
+   - **Sorumlu Birimler**
+4. **Oluştur** butonuna tıklayın.
 
-## Eylem Detayları
-
-Her eylem için aşağıdaki bilgiler tanımlanır:
-
-| Alan | Açıklama |
-|------|----------|
-| Eylem Adı | Yapılacak işin kısa tanımı |
-| Açıklama | Detaylı açıklama |
-| Sorumlu Birim | Eylemi yürütecek birim |
-| Başlangıç Tarihi | Planlanan başlangıç |
-| Bitiş Tarihi | Hedeflenen tamamlanma |
-| Durum | Mevcut durum |
-| İlerleme | Yüzde olarak ilerleme |
+!!! note "Form uyarısı"
+    Bir eylem altındaki uygulama adımlarının **Ağırlık** toplamı en fazla 100 olabilir.
 
 ---
 
-## Eylem Durumları
+## Yıllık Eylem Planından DİF Oluşturma {#yillik-eylem-plani}
 
-| Durum | Açıklama |
-|-------|----------|
-| Planlandı | Henüz başlanmamış |
-| Devam Ediyor | Aktif olarak çalışılıyor |
-| Tamamlandı | Başarıyla tamamlandı |
-| Ertelendi | İleri tarihe ertelendi |
-| İptal Edildi | Uygulamadan vazgeçildi |
+!!! note "Rol"
+    Süreç Yöneticisi, Kalite Sorumlusu (uygulama adımının sorumlu birimi)
 
----
+Seçili yıla ait tüm eylem planları **Yıllık Eylem Planı** ekranında listelenir.
 
-## İlerleme Takibi
+1. **Eylem Planı** > **Yıllık Eylem Planı** menüsüne girin.
+2. Gerekirse arama alanlarıyla listeyi daraltın.
+3. Biriminize verilen uygulama adımının satırındaki **DİF Oluştur** butonuna tıklayın.
+4. DİF formunu doldurun ve **Oluştur** butonuna tıklayın. Formun doldurulması [İyileştirme Yönetimi](iyilestirme.md)
+   sayfasında anlatılmıştır.
 
-Eylem ilerlemesi düzenli olarak güncellenmelidir:
-
-1. İlgili eylemin detay sayfasına gidin
-2. **İlerleme Güncelle** butonuna tıklayın
-3. İlerleme yüzdesini girin
-4. Açıklama ekleyin (opsiyonel)
-5. **Kaydet** butonuna tıklayın
-
-!!! warning "Düzenli Güncelleme"
-    Eylem ilerlemelerini en az ayda bir güncelleyin. Bu, yönetimin karar alma süreçlerini destekler.
-
----
-
-## Raporlama
-
-Eylem planları için çeşitli raporlar oluşturulabilir:
-
-- Yıllık eylem planı raporu
-- Birim bazlı ilerleme raporu
-- Geciken eylemler raporu
-- Tamamlanma oranı analizi
-
-Raporlara **Raporlar** menüsünden erişebilirsiniz.
+**DİF Oluştur** butonu, uygulama adımının **Başlangıç Tarihi** ile **Bitiş Tarihi** arasında görünür.

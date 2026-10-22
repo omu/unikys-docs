@@ -1,166 +1,220 @@
 # Ayarlar
 
-Bu modül, sistem yapılandırmasının ve yönetiminin yapıldığı bölümdür.
+Bu menüde takvimler, yıllar, dönemler, kullanıcı rolleri, rol tanımları ve birimler yönetilir.
 
-!!! info "Erişim"
-    Bu modüle **Admin**, **Üniversite Yönetimi** ve **Veri ve Göstergeler Admin** rolleri erişebilir. Alt menüler role göre farklılık gösterir.
+## Bu sayfayı kimler kullanır
 
-## Alt Menüler
+| Rol | Yapacağı işler |
+|-----|----------------|
+| Admin | [Takvimler](#takvimler), [Yıllar](#yillar), [Dönemler](#donemler), [Kullanıcılar](#kullanicilar), [Rol Tanımları](#rol-tanimlari), [Birimler](#birimler), [Birim Sorumluları](#birim-sorumlulari), [Aktiviteler](#aktiviteler), [Önceki yıldan kopyalama](#onceki-yildan-kopyalama) |
+| Süper Admin | [Global rol atama](#global-roller) |
+| Veri ve Göstergeler Admini | [Dönemler](#donemler) |
 
-### Takvimler
+## Takvimler {#takvimler}
 
-Akademik ve idari takvimlerin yönetildiği bölüm.
+!!! note "Rol"
+    Admin
 
-!!! note "Erişim"
-    Sadece **Admin** tarafından yönetilebilir.
+### Takvim oluşturma
 
-**Takvim Oluşturma:**
+1. **Ayarlar** > **Takvimler** menüsüne girin.
+2. **Takvim Oluştur** butonuna tıklayın.
+3. **Takvim Adı** alanını doldurun ve **Gizlilik** alanından **Herkese Açık** ya da **Gizli** seçeneğini seçin.
+4. **Oluştur** butonuna tıklayın.
 
-1. **Ayarlar > Takvimler** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Takvim adını girin
-4. Dönemleri tanımlayın
-5. **Kaydet** butonuna tıklayın
+### Takvime etkinlik ekleme
 
----
+1. **Ayarlar** > **Takvimler** menüsünde takvimin satırındaki **Göster** butonuna tıklayın.
+2. **Takvim Etkinlikleri** panelinde **Takvim Etkinliği Oluştur** butonuna tıklayın.
+3. **Etkinlik Adı**, **Açıklama**, **Başlangıç Tarihi** ve **Bitiş Tarihi** alanlarını doldurun.
+4. **Oluştur** butonuna tıklayın.
 
-### Yıllar
+**Herkese Açık** takvimlerin etkinlikleri **Anasayfa**daki takvimde görünür.
 
-Akademik yılların tanımlandığı bölüm.
+## Yıllar {#yillar}
 
-!!! note "Erişim"
-    Sadece **Admin** tarafından yönetilebilir.
+!!! note "Rol"
+    Admin
 
-**Yıl Oluşturma:**
+1. **Ayarlar** > **Yıllar** menüsüne girin.
+2. Aktif yapmak istediğiniz yılın satırındaki **Aktif et** butonuna tıklayın.
 
-1. **Ayarlar > Yıllar** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Yıl adını girin (örn: 2024-2025)
-4. Aktif yıl olarak işaretleyin (gerekirse)
-5. **Kaydet** butonuna tıklayın
+Üst çubuktaki **Seçili Yıl** listesi yalnızca görüntülenen yılı değiştirir; aktif yılı bu ekrandan değiştirirsiniz.
 
-!!! warning "Aktif Yıl"
-    Sistemde sadece bir aktif yıl olabilir. Aktif yıl, varsayılan olarak kullanılan yıldır.
+## Dönemler {#donemler}
 
----
+!!! note "Rol"
+    Admin, Veri ve Göstergeler Admini
 
-### Dönemler
+### Dönem oluşturma
 
-Veri giriş dönemlerinin tanımlandığı bölüm.
+1. **Ayarlar** > **Dönemler** menüsüne girin.
+2. **Yeni Dönem Oluştur** butonuna tıklayın.
+3. **Dönem** alanını doldurun.
+4. **Oluştur** butonuna tıklayın.
 
-**Dönem Oluşturma:**
+### Döneme tarih verme
 
-1. **Ayarlar > Dönemler** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Dönem adını girin
-4. Başlangıç ve bitiş tarihlerini belirleyin
-5. İlgili yılı seçin
-6. **Kaydet** butonuna tıklayın
+1. **Ayarlar** > **Dönemler** menüsünde dönemin satırındaki **Göster** butonuna tıklayın.
+2. **Dönem Tarihleri** panelinde **Dönem Tarihlerini Oluştur** butonuna tıklayın.
+3. **Başlangıç Tarihi** ve **Bitiş Tarihi** alanlarını doldurun.
+4. **Oluştur** butonuna tıklayın.
 
----
+Dönemler; gösterge etiketlerinde (**Kurumsal Veri Dönemleri**, **Hedef Dönemleri**, **Üst Hedef Dönemleri**),
+kurumsal göstergelerde ve iç değerlendirmede (**BİDR Giriş Dönemleri**, **KİDR Giriş Dönemleri**) seçilir. Veri ve hedef
+girişinin yapılabilmesi için seçilen döneme o yıl için tarih verilmiş olmalıdır.
 
-### Kullanıcı Yönetimi
+## Kullanıcılar {#kullanicilar}
 
-Sistem kullanıcılarının yönetildiği bölüm.
+!!! note "Rol"
+    Admin
 
-!!! note "Erişim"
-    Sadece **Admin** tarafından yönetilebilir.
+### Kullanıcı arama
 
-**Kullanıcı İşlemleri:**
+1. **Ayarlar** > **Kullanıcılar** menüsüne girin.
+2. **E-posta**, **Rol** ya da **Birim** alanlarını doldurun ve **Arama Yap** butonuna tıklayın.
+3. Listeyi Excel olarak almak için **Kullanıcıları İndir** butonuna tıklayın.
 
-- Kullanıcı listesi görüntüleme
-- Yeni kullanıcı ekleme
-- Kullanıcı düzenleme
-- Rol atama
-- Hesap kilitleme/açma
+**E-posta** sütununda kullanıcının adına ya da e-posta adresine tıklayınca **Kullanıcı** sayfası açılır. Bu sayfada **Kullanıcı Bilgileri**,
+**Birim Rolleri**, **Diğer Roller**, **Süreç Rolleri** ve **Sorumlu Olduğu Etiketler** görüntülenir.
 
-**Kullanıcı Ekleme:**
+!!! info
+    Bu ekranda kullanıcı ekleme ve parola sıfırlama yoktur (bkz. [Sisteme Giriş](../giris/sisteme-giris.md)). Birim rolleri
+    [Birim Sorumluları](#birim-sorumlulari) ekranından atanır.
 
-1. **Ayarlar > Kullanıcı Yönetimi** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Kullanıcı bilgilerini girin
-4. Rolleri atayın
-5. **Kaydet** butonuna tıklayın
+### Tanımlı rol atama {#tanimli-rol-atama}
 
----
+!!! note "Rol"
+    Admin
 
-### Birim Yönetimi
+1. **Ayarlar** > **Kullanıcılar** menüsünde **E-posta** sütunundaki kullanıcı adına ya da e-posta adresine tıklayın.
+2. **Tanımlı Roller** panelinde atanacak rolleri seçin.
+3. **Kaydet** butonuna tıklayın.
 
-Kurumsal birimlerin tanımlandığı bölüm.
+Seçilebilen roller **Rol Tanımları** ekranında oluşturulan rollerdir (bkz. [Rol Tanımları](#rol-tanimlari)).
 
-!!! note "Erişim"
-    Sadece **Admin** tarafından yönetilebilir.
+### Global rol atama {#global-roller}
 
-**Birim Yapısı:**
+!!! note "Rol"
+    Süper Admin
 
-```
-Üniversite
-├── Rektörlük
-│   ├── Genel Sekreterlik
-│   └── ...
-├── Fakülteler
-│   ├── Mühendislik Fakültesi
-│   └── ...
-└── Enstitüler
-    └── ...
-```
+1. **Ayarlar** > **Kullanıcılar** menüsünde **E-posta** sütunundaki kullanıcı adına ya da e-posta adresine tıklayın.
+2. **Global Roller** panelinde rolleri seçin: Admin, Üniversite Yöneticisi, SGDB Admini, Veri ve Göstergeler Admini.
+3. **Kaydet** butonuna tıklayın.
 
-**Birim Oluşturma:**
+## Rol Tanımları {#rol-tanimlari}
 
-1. **Ayarlar > Birim Yönetimi** menüsüne gidin
-2. **Yeni Ekle** butonuna tıklayın
-3. Birim adını girin
-4. Üst birimi seçin
-5. Birim türünü belirleyin
-6. **Kaydet** butonuna tıklayın
+!!! note "Rol"
+    Admin
 
----
+### Rol tanımı oluşturma
 
-### Birim Sorumlularını Yönet
+1. **Ayarlar** > **Rol Tanımları** menüsüne girin.
+2. **Yeni Rol Tanımı** butonuna tıklayın.
+3. **Rol Adı** ve **Açıklama** alanlarını doldurun. Rolün kullanılabilmesi için **Aktif** kutusu işaretli olmalıdır.
+4. **Menü Yetkileri** tablosunda her alt menü için **Okuma**, **Yazma** ve gerekirse **Rapor** kutularını işaretleyin.
+   Yalnızca okunabilen sayfalarda **Yazma** kutusu yoktur.
+   - Bir menünün tüm alt menülerini işaretlemek için üst menü satırındaki kutuyu işaretleyin (kutunun üzerine gelince
+     **Tümünü seç** yazar).
+   - **Yazma** işaretlendiğinde **Okuma** da işaretlenir.
+   - **Rapor** kutusunun üzerine gelince açılacak raporların adları görünür.
+5. **Oluştur** butonuna tıklayın.
 
-Birimlere sorumlu kullanıcı atama işlemlerinin yapıldığı bölüm.
+### Rol tanımını düzenleme ve silme
 
-**Sorumlu Atama:**
+1. **Ayarlar** > **Rol Tanımları** menüsüne girin.
+2. Rolün satırındaki **Düzenle** butonuna tıklayın, değişiklikleri yapın ve **Kaydet** butonuna tıklayın.
+3. Rolü silmek için satırdaki **Sil** butonuna tıklayın ve onaylayın. Silinen rol, atandığı kullanıcılardan da kaldırılır.
 
-1. **Ayarlar > Birim Sorumlularını Yönet** menüsüne gidin
-2. İlgili birimi bulun
-3. Sorumlu türünü seçin (Süreç Sorumlusu, Kalite Temsilcisi, vb.)
-4. Kullanıcıyı seçin
-5. **Kaydet** butonuna tıklayın
+Rolün yetkilerini ve atandığı kullanıcıları görmek için satırdaki **Göster** butonuna tıklayın (**Menü Yetkileri** ve
+**Atanmış Kullanıcılar** panelleri).
 
----
+Rolü kullanıcılara atamak için bkz. [Tanımlı rol atama](#tanimli-rol-atama).
 
-### Aktivite Günlüğü
+## Birimler {#birimler}
 
-Sistemde yapılan işlemlerin kaydedildiği günlük.
+!!! note "Rol"
+    Admin
 
-!!! note "Erişim"
-    Sadece **Admin** tarafından görüntülenebilir. Demo ortamında gizlidir.
+**Birimler** ekranında üç sekme bulunur:
 
-**Günlük İçeriği:**
+| Sekme | İçerik |
+|-------|--------|
+| **Tüm Birimler** | Sistemdeki tüm birimler (YÖKSİS'ten gelenler ve elle eklenenler) |
+| **Oluşturulan Birimler** | Admin'in elle eklediği birimler |
+| **Gruplar** | Birim grupları |
 
-- Kullanıcı işlemleri
-- Kayıt oluşturma/güncelleme/silme
-- Giriş/çıkış bilgileri
-- Sistem olayları
+### Birim arama ve indirme
 
----
+1. **Ayarlar** > **Birimler** menüsüne girin.
+2. **Tüm Birimler** sekmesinde **Birim Adı**, **Birim Türü** ya da **Aktiflik Durumu** alanlarını doldurup
+   **Arama Yap** butonuna tıklayın.
+3. Listeyi Excel olarak almak için **Excel Dosyası Olarak İndir** butonuna tıklayın, açılan pencerede filtreleri seçip
+   indirin.
 
-## Sistem Yapılandırması
+### Birim ekleme
 
-| Ayar | Açıklama | Varsayılan |
-|------|----------|------------|
-| Aktif Yıl | Varsayılan çalışma yılı | Son oluşturulan |
-| Dil | Sistem dili | Türkçe |
-| Zaman Dilimi | Sistem saat dilimi | İstanbul |
+YÖKSİS'ten gelmeyen birimler (ör. idari birimler) bu adımlarla eklenir.
 
----
+1. **Ayarlar** > **Birimler** menüsünde **Oluşturulan Birimler** sekmesine geçin.
+2. **Yeni Birim Ekle** butonuna tıklayın.
+3. **Adı**, **İngilizce Adı**, **Yöksis Üst Birim Id**, **Eğitim Türü**, **Birim Türü** ve **Aktif** alanlarını
+   doldurun.
+4. **Oluştur** butonuna tıklayın.
 
-## Güvenlik Ayarları
+YÖKSİS'ten gelen birimler düzenlenemez; yalnızca **Oluşturulan Birimler** sekmesindeki birimler düzenlenip silinebilir.
 
-!!! warning "Dikkat"
-    Güvenlik ayarları sadece yetkili kişiler tarafından değiştirilmelidir.
+### Birim grubu oluşturma
 
-- Şifre politikaları
-- Oturum süreleri
-- Erişim kısıtlamaları
+1. **Ayarlar** > **Birimler** menüsünde **Gruplar** sekmesine geçin.
+2. **Yeni Grup Ekle** butonuna tıklayın.
+3. **Grup Adı** alanını doldurun ve **Birimler** alanından birimleri seçin.
+4. **Oluştur** butonuna tıklayın.
+
+Mevcut bir grubu çoğaltmak için satırdaki **Kopyala**, gruptaki birimleri görmek için **Birimleri Göster** butonunu
+kullanın.
+
+## Birim Sorumluları {#birim-sorumlulari}
+
+!!! note "Rol"
+    Admin
+
+1. **Ayarlar** > **Birim Sorumluları** menüsüne girin.
+2. **Birimler ve Sorumluları** panelinde açılır listeden birimi seçin.
+3. Açılan **Sorumlular** panelinde ilgili alanlardan kullanıcıları seçin:
+   - **Veri Giriş Yetkilileri**
+   - **Süreç Yöneticisi** (birimde bir kişi)
+   - **Kalite Sorumluları**
+   - **Rapor Yetkilileri**
+   - **Paydaş İletişim Görevlileri**
+   - **İç Kontrol Onay Yetkilileri**
+   - **İç Kontrol Sorumluları**
+4. **Kaydet** butonuna tıklayın.
+
+## Aktiviteler {#aktiviteler}
+
+!!! note "Rol"
+    Admin
+
+1. **Ayarlar** > **Aktiviteler** menüsüne girin.
+2. Arama alanlarını (ör. **Açıklama**, **Kullanıcı**, **Başlangıç Tarihi**, **Bitiş Tarihi**) doldurup
+   **Arama Yap** butonuna tıklayın.
+3. Bir kaydın ayrıntısını görmek için **Detaylar** sütunundaki simgeye tıklayın.
+
+## Önceki yıldan kopyalama {#onceki-yildan-kopyalama}
+
+!!! note "Rol"
+    Admin
+
+Yeni yıl aktif edildikten sonra yıllık tanımlar ilgili ekranlardaki kopyalama butonlarıyla önceki yıldan aktarılır.
+İlk beş satırdaki butonlar aktif yıl seçiliyken görünür.
+
+| Ekran | Buton |
+|-------|-------|
+| **Süreç Yönetimi** > **Süreç Kartları** | **Eksik Süreçleri Önceki Yıldan Kopyala** |
+| **Risk ve Fırsat Yönetimi** > **Risk Seviyeleri** | **Eksik Risk Seviyelerini Önceki Yıldan Kopyala** |
+| **Risk ve Fırsat Yönetimi** > **Fırsatlar** | **Eksik Fırsatları Önceki Yıldan Kopyala** |
+| **Geri Bildirimler** > **Geri Bildirim Konuları** | **Eksik Konuları Önceki Yıldan Kopyala** |
+| **Eylem Planı** > **Eylem Alanları** | **Eksik Eylem Alanlarını Önceki Yıldan Kopyala** |
+| **İç Değerlendirme** > **İç Değerlendirmeler** > iç değerlendirme > **Başlıklar** | **Eksik Başlıkları Diğerlerinden Kopyala (Son iki yıl)** paneli |
+| **İç Tetkik** > **İç Tetkikler** | **Önceki İç Tetkikten Aktar** |

@@ -1,58 +1,61 @@
 # Sisteme Giriş
 
-Bu sayfa, Ünikys sistemine nasıl giriş yapılacağını açıklamaktadır.
+Bu sayfada sisteme giriş, hesap oluşturma ve parola işlemleri anlatılır.
 
-## Giriş Sayfası
+## Giriş yapma {#giris-yapma}
 
-Sisteme erişmek için kurumunuzun Ünikys adresine gidin. Giriş sayfasında aşağıdaki bilgileri girmeniz gerekmektedir:
+1. Ünikys adresini tarayıcınızda açın. Giriş yapmadıysanız sağ üstteki **Giriş** bağlantısına tıklayın.
+2. **Giriş** ekranında **E-posta** ve **Parola** alanlarını doldurun.
+3. **Giriş** butonuna tıklayın.
 
-- **E-posta**: Kurumsal e-posta adresiniz
-- **Şifre**: Sistem şifreniz
+![Giriş ekranı](../assets/img/giris-ekrani.png){ width="360" }
 
-## İlk Giriş
+Giriş yaptıktan sonra **Anasayfa** açılır. Bkz. [Arayüz Tanıtımı](arayuz.md).
 
-Sisteme ilk kez giriş yapıyorsanız:
+## Hesap oluşturma {#hesap-olusturma}
 
-1. Yöneticinizden hesap bilgilerinizi alın
-2. Giriş sayfasına gidin
-3. E-posta ve şifrenizi girin
-4. **Giriş Yap** butonuna tıklayın
+Giriş ekranında **Hesap Oluştur** bağlantısı varsa kendi hesabınızı oluşturabilirsiniz.
 
-!!! warning "Şifre Güvenliği"
-    İlk girişten sonra şifrenizi değiştirmeniz önerilir. Şifre değişikliği için sağ üst köşedeki profil menüsünü kullanabilirsiniz.
+1. **Giriş** ekranında **Hesap Oluştur** bağlantısına tıklayın.
+2. **E-posta**, **Parola** ve **Parola (Tekrar)** alanlarını doldurun.
+3. **Oluştur** butonuna tıklayın.
 
-## Şifre Değiştirme
+!!! note "Roller"
+    Yeni oluşturulan hesapta herhangi bir rol yoktur. Rolünüze ait menüleri görebilmeniz için rollerinizin Admin
+    tarafından atanması gerekir. Bkz. [Roller ve Yetkiler](../roller.md).
 
-Şifrenizi değiştirmek için:
+## Parolamı unuttum {#parola-sifirlama}
 
-1. Sağ üst köşedeki kullanıcı adınıza tıklayın
-2. Açılan menüden **Şifre Değiştir** seçeneğini seçin
-3. Mevcut şifrenizi ve yeni şifrenizi girin
-4. **Kaydet** butonuna tıklayın
+Giriş ekranında **Parola Sıfırla** bağlantısı varsa parolanızı e-posta ile yenileyebilirsiniz.
 
-## Çıkış Yapma
+1. **Giriş** ekranında **Parola Sıfırla** bağlantısına tıklayın.
+2. **E-posta** alanına hesabınızın e-posta adresini yazın.
+3. **Sıfırla** butonuna tıklayın.
+4. E-posta adresinize gelen iletideki **Parolamı değiştir** bağlantısına tıklayın.
+5. Açılan **Parolamı Değiştir** ekranında **Parola** ve **Parola (Tekrar)** alanlarını doldurun.
+6. **Parolamı Değiştir** butonuna tıklayın.
 
-Sistemden güvenli çıkış yapmak için:
+!!! info
+    Parola sıfırlama kullanıcının kendisi tarafından e-posta ile yapılır.
 
-1. Sağ üst köşedeki kullanıcı adınıza tıklayın
-2. Açılan menüden **Çıkış** seçeneğini seçin
+## Parola değiştirme {#parola-degistirme}
 
-!!! tip "Güvenlik İpucu"
-    Paylaşımlı bilgisayarlarda çalışıyorsanız, işiniz bittiğinde mutlaka çıkış yapın.
+Kullanıcı menüsünde **Parolamı Değiştir** seçeneği varsa parolanızı şu adımlarla değiştirebilirsiniz:
 
-## Sorun Giderme
+1. Sağ üstte e-posta adresinize tıklayın.
+2. **Parolamı Değiştir** seçeneğine tıklayın.
+3. **Parola**, **Parola (Tekrar)** ve **Mevcut Parolanız** alanlarını doldurun.
+4. **Değişiklikleri Kaydet** butonuna tıklayın.
 
-### Şifremi Unuttum
+## Profil bilgilerini güncelleme {#profil}
 
-Şifrenizi unuttuysanız sistem yöneticinize başvurun.
+1. Sağ üstte e-posta adresinize tıklayın.
+2. **Profil** seçeneğine tıklayın.
+3. **Düzenle** butonuna tıklayın.
+4. **Ad Soyad**, **Kişisel E-posta**, **Cep Telefonu**, **Dahili No**, **Kadro Birimi** ve **Ünvan** alanlarını
+   doldurun.
+5. **Kaydet** butonuna tıklayın.
 
-### Hesabım Kilitlendi
+## Çıkış
 
-Çok sayıda başarısız giriş denemesi hesabınızın kilitlenmesine neden olabilir. Bu durumda sistem yöneticinize başvurun.
-
-### Sisteme Erişemiyorum
-
-- İnternet bağlantınızı kontrol edin
-- Tarayıcınızı güncelleyin
-- Önbelleği temizleyin
-- Sorun devam ederse sistem yöneticinize başvurun
+Sağ üstte e-posta adresinize tıklayın ve **Çıkış** seçeneğine tıklayın.
